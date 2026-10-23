@@ -3,238 +3,350 @@
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
     "section": "BNS Section 303 / IPC Section 378",
     "title": "Theft",
-    "keywords": "theft stolen property stealing robbery shoplifting",
-    "plain_text": "Theft is the dishonest taking of movable property out of the possession of any person without consent. Punishment: imprisonment up to 3 years or fine or both. Aggravated theft (house-breaking, vehicle theft) carries higher punishment."
+    "keywords": "theft stolen property stealing robbery shoplifting pickpocket vehicle motorcycle bike stolen",
+    "plain_text": "Theft is the dishonest taking of movable property out of the possession of any person without consent. Punishment: imprisonment up to 3 years or fine or both. Aggravated theft (house-breaking, vehicle theft, theft at night) carries higher punishment up to 7 years. File an FIR immediately and note down the serial numbers and description of stolen property."
+  },
+  {
+    "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
+    "section": "BNS Section 309 / IPC Section 390–392",
+    "title": "Robbery",
+    "keywords": "robbery mugging snatching chain snatching violent theft bag snatched held up dacoity",
+    "plain_text": "Robbery is theft with the use or threat of force. Punishment: rigorous imprisonment up to 10 years and fine. Dacoity (robbery by 5 or more persons) carries up to life imprisonment. File FIR immediately. Preserve any CCTV footage or eyewitness contacts. Robbery is a non-bailable, cognizable offence."
   },
   {
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
     "section": "BNS Section 308 / IPC Section 383",
     "title": "Extortion",
-    "keywords": "extortion blackmail threat money coercion demand threat harm",
-    "plain_text": "Whoever intentionally puts a person in fear of injury and dishonestly induces them to deliver property or valuable security commits extortion. Punishment: imprisonment up to 3 years or fine or both."
+    "keywords": "extortion blackmail threat money coercion demand threat harm pay or else ransom",
+    "plain_text": "Whoever intentionally puts a person in fear of injury and dishonestly induces them to deliver property or valuable security commits extortion. Punishment: imprisonment up to 3 years or fine or both. Threatening online (WhatsApp, calls) also qualifies. Report to police and cybercrime portal. Keep all threatening messages as evidence."
   },
   {
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
     "section": "BNS Section 115 / IPC Section 323",
-    "title": "Voluntarily causing hurt",
-    "keywords": "assault beating hit punch slap hurt injury physical attack fight",
-    "plain_text": "Voluntarily causing hurt (causing bodily pain, disease or infirmity) to another person is punishable with imprisonment up to 1 year or fine up to Rs. 1000 or both. Grievous hurt carries up to 7 years imprisonment."
+    "title": "Assault and causing hurt",
+    "keywords": "assault beating hit punch slap hurt injury physical attack fight neighbour attack hit by someone",
+    "plain_text": "Voluntarily causing hurt (bodily pain, disease or infirmity) is punishable with imprisonment up to 1 year or fine up to Rs. 1000 or both. Grievous hurt (permanent disability, fracture, disfigurement): up to 7 years. Gather medical evidence (hospital records, doctor certificate). File FIR. Photograph injuries immediately."
   },
   {
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
     "section": "BNS Section 74 / IPC Section 354",
-    "title": "Assault or criminal force on woman / Sexual harassment",
-    "keywords": "sexual harassment molestation outrage modesty woman assault touch inappropriate",
-    "plain_text": "Assault or criminal force on a woman intending to outrage her modesty is punishable with imprisonment of 1 to 5 years and fine. Sexual harassment of woman at workplace is separately covered under the Sexual Harassment of Women at Workplace Act 2013 (POSH Act)."
+    "title": "Assault on woman / Sexual harassment",
+    "keywords": "sexual harassment molestation outrage modesty woman assault touch inappropriate groping eve teasing",
+    "plain_text": "Assault or criminal force on a woman intending to outrage her modesty: imprisonment of 1 to 5 years and fine. Sexual harassment at workplace covered under POSH Act 2013. Stalking (BNS Section 78) punishable up to 3 years first offence, 5 years repeat. Report to police; a female officer must record statement. Keep messages and witness details."
   },
   {
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
     "section": "BNS Section 64 / IPC Section 376",
     "title": "Rape",
-    "keywords": "rape sexual assault sexual violence non consensual sex",
-    "plain_text": "Rape is punishable with rigorous imprisonment of minimum 10 years extendable to life imprisonment and fine. The survivor can report to any police station. A female officer must record the statement. Medical examination must be done with survivor's consent."
+    "keywords": "rape sexual assault sexual violence non consensual sex survivor report",
+    "plain_text": "Rape: minimum 10 years rigorous imprisonment extendable to life, plus fine. Survivor can report at ANY police station (Zero FIR). A female officer must record statement. Medical examination only with survivor's consent. Identity of survivor must not be disclosed. Free legal aid is available. Contact One-Stop Centres (Sakhi): 7827170170. Limitation: No limitation period for reporting."
   },
   {
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
     "section": "BNS Section 318 / IPC Section 420",
-    "title": "Cheating",
-    "keywords": "cheating fraud deceive false promise online fraud money scam fake",
-    "plain_text": "Cheating by deceiving a person and dishonestly inducing them to deliver property or to do something they would not otherwise do. Punishment: imprisonment up to 7 years and fine. Online fraud additionally covered under IT Act Section 66C and 66D."
+    "title": "Cheating and fraud",
+    "keywords": "cheating fraud deceive false promise online fraud money scam fake investment job fraud lottery advance fee",
+    "plain_text": "Cheating by deceiving a person and dishonestly inducing them to deliver property: imprisonment up to 7 years and fine. Online investment fraud, job fraud, advance-fee scams also covered under IT Act Section 66D. Report at cybercrime.gov.in immediately. Freeze the fraud transaction by calling your bank (RBI rule: report within 3 days for zero liability). Keep all payment receipts, messages, and call records."
   },
   {
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
-    "section": "BNS Section 351 / IPC Section 503-506",
-    "title": "Criminal intimidation / Threat",
-    "keywords": "threat intimidation threatening harm death injury reputation",
-    "plain_text": "Threatening someone with injury to their person, reputation or property to cause alarm or to make them do something they are not legally bound to do. Punishment: imprisonment up to 2 years or fine or both. Threat of death or grievous hurt: up to 7 years."
+    "section": "BNS Section 351 / IPC Section 503–506",
+    "title": "Criminal intimidation and threats",
+    "keywords": "threat intimidation threatening harm death injury reputation online threat call threat WhatsApp threat",
+    "plain_text": "Threatening someone with injury to person, reputation, or property to cause alarm: imprisonment up to 2 years or fine. Threat of death or grievous hurt: up to 7 years. Online threats via WhatsApp, SMS, or call are also cognizable under IT Act. Screenshot threats. Note time and date. File FIR. Request call records from police if the caller is unknown."
   },
   {
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
-    "section": "BNS Section 356 / IPC Section 499-500",
+    "section": "BNS Section 356 / IPC Section 499–500",
     "title": "Defamation",
-    "keywords": "defamation reputation false statement slander libel social media post fake news",
-    "plain_text": "Making or publishing any imputation about a person intending to harm their reputation is defamation. Punishment: imprisonment up to 2 years or fine or both. Truth and public good are valid defences. Online defamation also attracts IT Act provisions."
+    "keywords": "defamation reputation false statement slander libel social media post fake news WhatsApp fake message",
+    "plain_text": "Making or publishing any imputation about a person intending to harm their reputation is defamation. Punishment: imprisonment up to 2 years or fine. Truth published for public good is a valid defence. Online defamation (social media, WhatsApp) also attracts IT Act Section 66. Civil defamation suit for damages can be filed separately in civil court. Preserve screenshots of defamatory posts."
+  },
+  {
+    "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
+    "section": "BNS Section 329 / IPC Section 441–447",
+    "title": "Criminal trespass and house-breaking",
+    "keywords": "trespass enter property without permission break in house break in locked out encroach entering land",
+    "plain_text": "Criminal trespass: entering property to commit an offence or intimidate occupants — imprisonment up to 3 months or fine or both. House-breaking (breaking into a dwelling): imprisonment up to 2 years. If done at night (lurking house-trespass): up to 3 years. Landlord unlawfully entering tenant's premises also qualifies as trespass. File FIR and note date, time, witnesses."
   },
   {
     "act": "Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 / Code of Criminal Procedure (CrPC) 1973",
     "section": "BNSS Section 173 / CrPC Section 154",
     "title": "First Information Report (FIR)",
-    "keywords": "FIR police complaint first information report register complaint cognizable offence",
-    "plain_text": "An FIR is the first step in reporting a cognizable offence (serious crimes like theft, assault, rape, murder). Police CANNOT refuse to register an FIR for a cognizable offence. If police refuse, you can: (1) Send complaint by post to SP/DSP, (2) Approach Magistrate under Section 156(3), (3) File complaint directly in court. A copy of the FIR must be given to the complainant FREE of charge."
+    "keywords": "FIR police complaint first information report register complaint police refuse refusal cognizable offence file FIR",
+    "plain_text": "An FIR is filed for cognizable offences (serious crimes: theft, assault, rape, murder, fraud). Police CANNOT refuse to register an FIR for a cognizable offence. If refused: (1) Send written complaint by post to SP/DCP with acknowledgement, (2) Approach Executive Magistrate under BNSS Section 175, (3) File complaint directly in court under BNSS Section 223. A free copy of the FIR must be given to the complainant. You can file an FIR at ANY police station (Zero FIR) regardless of jurisdiction."
   },
   {
     "act": "Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 / Code of Criminal Procedure (CrPC) 1973",
-    "section": "BNSS Section 176 / CrPC Section 161",
+    "section": "BNSS Section 176 / CrPC Section 154(2)",
     "title": "Zero FIR",
-    "keywords": "zero FIR police station jurisdiction wrong station any police station",
-    "plain_text": "A Zero FIR can be filed at ANY police station regardless of where the offence occurred. The station that receives it must forward it to the police station having jurisdiction. Very useful when you are not in the right area or don't know which station has jurisdiction."
+    "keywords": "zero FIR police station jurisdiction wrong station any police station away from home",
+    "plain_text": "A Zero FIR can be filed at ANY police station regardless of where the offence occurred or which station has jurisdiction. The receiving station must register it (numbered as Zero FIR) and transfer it to the correct jurisdiction station within 15 days. It is especially useful when a crime occurs away from your home district, you are not sure which station has jurisdiction, or the correct station is refusing to act."
   },
   {
     "act": "Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 / Code of Criminal Procedure (CrPC) 1973",
     "section": "BNSS Section 35 / CrPC Section 41",
-    "title": "Arrest without warrant",
-    "keywords": "arrest police arrest rights arrest warrant illegally detained custody arrested",
-    "plain_text": "Police can arrest without a warrant only for cognizable offences. Rights upon arrest: (1) Right to know the grounds of arrest, (2) Right to inform a friend or relative, (3) Right to consult and be defended by a lawyer, (4) Right to be produced before Magistrate within 24 hours, (5) Right to bail in bailable offences. Illegal detention or third-degree methods can be challenged by Habeas Corpus petition in High Court."
+    "title": "Rights upon arrest",
+    "keywords": "arrest police arrest rights arrest warrant illegally detained custody arrested handcuffed",
+    "plain_text": "Rights upon arrest: (1) Right to know the grounds of arrest in writing, (2) Right to inform a friend, relative or lawyer of the arrest, (3) Right to consult and be defended by a lawyer of choice, (4) Right to be produced before Magistrate within 24 hours, (5) Right to bail in bailable offences without delay, (6) Right to free legal aid if unable to afford a lawyer, (7) Right to remain silent (statements to police are not admissible as confessions). Illegal detention or custodial violence: file Habeas Corpus petition in High Court."
   },
   {
     "act": "Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 / Code of Criminal Procedure (CrPC) 1973",
     "section": "BNSS Section 480 / CrPC Section 438",
     "title": "Anticipatory Bail",
-    "keywords": "anticipatory bail arrest fear bail before arrest pre arrest bail",
-    "plain_text": "If a person has reason to believe they may be arrested for a non-bailable offence, they can apply to the Sessions Court or High Court for anticipatory bail. If granted, the police must release them on bail if arrested. Application must show reasons why arrest is feared."
+    "keywords": "anticipatory bail arrest fear bail before arrest pre arrest bail apprehension arrest non bailable",
+    "plain_text": "If a person fears arrest for a non-bailable offence, they can apply to Sessions Court or High Court for anticipatory bail. If granted, police must release them on bail if arrested. Application must state: grounds of apprehension, previous criminal record (if any), willingness to cooperate with investigation. Police can oppose it. Court may impose conditions. Apply BEFORE arrest. This does not prevent police from questioning you."
+  },
+  {
+    "act": "Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 / CrPC 1973",
+    "section": "BNSS Section 187 / CrPC Section 167",
+    "title": "Bail and remand rights",
+    "keywords": "bail remand custody police custody judicial custody bail application bailable non-bailable magistrate",
+    "plain_text": "After arrest, police can hold a person for up to 24 hours and must produce them before a Magistrate. Magistrate can grant judicial remand (up to 15 days at a time) or bail. In bailable offences, bail is a right — police must grant it. In non-bailable offences, only a Magistrate/court can grant bail. Default bail (also called statutory bail) is available if chargesheet is not filed in 60 days (serious offences) or 90 days (offences punishable with death/life) from the date of arrest."
   },
   {
     "act": "Protection of Women from Domestic Violence Act 2005",
-    "section": "Section 3, 12, 18, 19, 20, 21",
+    "section": "Section 3, 12, 18, 19, 20, 21, 22, 23",
     "title": "Domestic Violence — Protection, Residence and Monetary Orders",
-    "keywords": "domestic violence husband wife family abuse physical emotional verbal financial dowry beating",
-    "plain_text": "Any woman who has been in a domestic relationship and is subjected to domestic violence (physical, sexual, verbal, emotional, economic abuse) can approach a Magistrate for: (1) Protection Order — prohibiting abuser from committing acts of violence, (2) Residence Order — right to stay in shared household, (3) Monetary Relief — maintenance and compensation, (4) Custody Order for children. A Protection Officer or lawyer can help file an application. FIR can also be filed under IPC Section 498A (cruelty by husband/relatives)."
+    "keywords": "domestic violence husband wife family abuse physical emotional verbal financial dowry beating in laws marital cruelty",
+    "plain_text": "Any woman in a domestic relationship facing physical, sexual, verbal, emotional, or economic abuse can approach a Magistrate for: (1) Protection Order — prohibiting abuser from committing further violence, (2) Residence Order — right to remain in the shared household, (3) Monetary Relief — maintenance, medical expenses, and loss of earnings, (4) Custody Order — temporary custody of children, (5) Compensation Order. File application before Magistrate with help of a Protection Officer (at every district). FIR can also be filed under BNS/IPC Section 498A (cruelty by husband and relatives). Both civil and criminal remedies can be pursued simultaneously."
   },
   {
     "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / Indian Penal Code (IPC) 1860",
-    "section": "BNS Section 85 / IPC Section 498A",
+    "section": "BNS Section 85–86 / IPC Section 498A",
     "title": "Cruelty by husband or relatives (Dowry harassment)",
-    "keywords": "dowry harassment dowry demand cruelty husband in-laws torture 498A",
-    "plain_text": "Cruelty by husband or relatives — including dowry demands, mental or physical harassment — is a criminal offence punishable with imprisonment up to 3 years and fine. Cognizable and non-bailable. File FIR at local police station. Also covered under Dowry Prohibition Act 1961."
+    "keywords": "dowry harassment dowry demand cruelty husband in-laws torture 498A mental cruelty wife harassment",
+    "plain_text": "Cruelty by husband or relatives including dowry demands, mental or physical harassment is a cognizable, non-bailable criminal offence. Punishment: up to 3 years imprisonment and fine. File FIR at local police station. Dowry Prohibition Act 1961 also applies — demanding or giving dowry is punishable with minimum 6 months imprisonment. Stridhan (woman's personal gifts and property) must be returned on demand. Preserve all evidence of demands: messages, witnesses, medical records."
   },
   {
     "act": "Consumer Protection Act 2019",
-    "section": "Section 2, 17, 28, 34, 47, 58",
-    "title": "Consumer Rights and Consumer Forum",
-    "keywords": "consumer complaint defective product bad service online shopping refund cheated purchased goods services",
-    "plain_text": "A consumer who has paid for goods or services and suffered deficiency or unfair trade practice can file a complaint. Forums: District Commission (claims up to Rs. 1 crore), State Commission (Rs. 1-10 crore), National Commission (above Rs. 10 crore). Complaint can be filed online at consumerhelpline.gov.in. No lawyer needed for District Commission. Relief: refund, replacement, compensation, damages. Limitation: 2 years from cause of action."
+    "section": "Section 2, 17, 28, 34, 47, 58, 86, 88",
+    "title": "Consumer Rights and Consumer Commission",
+    "keywords": "consumer complaint defective product bad service online shopping refund cheated purchased goods services e-commerce amazon flipkart",
+    "plain_text": "A consumer can file complaint for defective goods, deficient service, unfair trade practice, or misleading advertisement. Forums (based on claim amount): District Commission (up to Rs. 50 lakh), State Commission (Rs. 50 lakh to Rs. 2 crore), National Commission (above Rs. 2 crore). File online at edaakhil.nic.in or consumerhelpline.gov.in (helpline: 1800-11-4000). No lawyer needed for District Commission. Limitation: 2 years from cause of action. E-commerce companies are also liable. Remedies: refund, replacement, compensation, punitive damages."
   },
   {
     "act": "Consumer Protection Act 2019",
-    "section": "Section 2(7), 2(42)",
-    "title": "Definition of Consumer and Deficiency",
-    "keywords": "consumer definition service deficiency defective product warranty guarantee online shopping ecommerce",
-    "plain_text": "Consumer: Any person who buys goods or hires services for personal use (not for resale). Includes online purchases. Deficiency: Any fault in quality, quantity, potency, purity or standard. Defective goods: Any fault making it unsafe or not meeting standards. E-commerce sellers are also covered."
+    "section": "Section 2(7), 2(42), 2(11), 2(9)",
+    "title": "Consumer definitions and e-commerce rights",
+    "keywords": "consumer definition service deficiency defective product warranty guarantee online shopping ecommerce return refund reject",
+    "plain_text": "Consumer: anyone who buys goods or hires services for personal use (not for commercial resale). Includes online purchases. E-commerce platform liability: sellers and platforms both can be held responsible for defective products. Manufacturers also liable under product liability provisions. Complaint can be filed in the state where the consumer resides, not where the company is located. Mediation is available for quick resolution before full hearing."
   },
   {
     "act": "Transfer of Property Act 1882 / Rent Control Acts (State-specific)",
     "section": "Section 105, 106, 108",
-    "title": "Landlord-Tenant — Eviction and Notice",
-    "keywords": "landlord tenant eviction notice rent house locked out illegal eviction security deposit",
-    "plain_text": "A landlord CANNOT evict a tenant without proper legal notice and court order. For month-to-month tenancy: 15 days notice required. Annual tenancy: 6 months notice. Forceful eviction, locking the premises, or cutting utilities without court order is ILLEGAL and constitutes criminal trespass and wrongful restraint. The tenant can: (1) File FIR for illegal eviction, (2) Approach Rent Controller, (3) File civil suit. State Rent Control Acts provide additional protection. Security deposit must be returned."
+    "title": "Landlord-Tenant — Eviction, notice, and rights",
+    "keywords": "landlord tenant eviction notice rent house locked out illegal eviction security deposit lock change electricity cut water cut",
+    "plain_text": "Landlord CANNOT evict a tenant without proper notice and a court order. Required notice: 15 days for month-to-month tenancy, 6 months for annual tenancy. Forceful eviction, locking premises, cutting electricity/water without court order is ILLEGAL and constitutes criminal trespass. Tenant's remedies: (1) FIR for illegal eviction under BNS Section 329 (criminal trespass), (2) Application to Rent Controller, (3) Civil suit for injunction. Rent agreement (even unregistered) is valid evidence. Security deposit must be returned with interest as per state law."
+  },
+  {
+    "act": "Registration Act 1908 / Transfer of Property Act 1882",
+    "section": "Section 17, 49 Registration Act; Section 54, 55 TPA",
+    "title": "Property sale, registration, and title",
+    "keywords": "property sale land registration title document sale deed property fraud benami property cheated on property",
+    "plain_text": "Any sale of immovable property valued above Rs. 100 must be registered. An unregistered sale deed does not transfer legal title. Before buying property: verify title through registered documents at Sub-Registrar office, check encumbrance certificate for loans or legal disputes, verify mutation records at Tehsil/Panchayat. Property fraud (fake documents, double selling): file FIR under BNS Section 318 (cheating) and BNS Section 336 (forgery). Benami property (in someone else's name) is illegal under Benami Transactions Act 1988."
   },
   {
     "act": "Indian Contract Act 1872",
     "section": "Section 10, 23, 25, 73, 74",
-    "title": "Valid Contract and Breach of Contract",
-    "keywords": "contract agreement breach promise broken deal signed agreement not paid refund service not provided",
-    "plain_text": "A valid contract requires: offer, acceptance, consideration (payment/value), free consent, lawful object, and competent parties. Breach: If one party fails to perform, the other can claim compensation for actual losses (Section 73). Unlawful contracts (illegal, immoral, against public policy) are void. Limitation period to file civil suit for contract breach: 3 years."
+    "title": "Contract — validity, breach, and remedies",
+    "keywords": "contract agreement breach promise broken deal signed agreement not paid refund service not provided verbal agreement",
+    "plain_text": "Valid contract requires: offer + acceptance, consideration (payment/value), free consent (no coercion, fraud, or undue influence), lawful purpose, and competent parties (age 18+). Breach: if one party fails to perform, the other can claim actual losses (Section 73). Unlawful contracts (illegal, immoral, against public policy) are void and unenforceable. A contract with a minor (under 18) is completely void. Oral contracts are valid but hard to prove — prefer written agreements. Limitation to file civil suit for contract breach: 3 years."
   },
   {
-    "act": "Information Technology Act 2000 (IT Act) and Amendment 2008",
-    "section": "Section 43, 66, 66C, 66D, 67, 72",
-    "title": "Cybercrime — Hacking, Identity Theft, Online Fraud",
-    "keywords": "hacking cyber crime phishing identity theft OTP fraud online fraud fake account social media hack password stolen",
-    "plain_text": "Key IT Act offences: Section 66 (hacking/computer damage), Section 66C (identity theft — using another's password/OTP), Section 66D (cheating by impersonation online), Section 67 (publishing obscene material). Report cybercrimes at cybercrime.gov.in or nearest Cybercrime police station. For financial fraud: also report to bank immediately and RBI Ombudsman."
+    "act": "Specific Relief Act 1963",
+    "section": "Section 10, 11, 12, 14, 38, 39",
+    "title": "Specific performance of contract",
+    "keywords": "specific performance force other party to honour agreement property sale contract not honoured land deal breach",
+    "plain_text": "When a seller refuses to transfer property despite taking advance payment, the buyer can file a suit for specific performance — asking the court to force the seller to complete the transaction. Available for property sales, unique goods, and contracts where money compensation is not adequate. Must be filed within 3 years of the breach. An interim injunction can prevent the seller from selling to anyone else during the case. File suit in civil court having jurisdiction over the property."
   },
   {
-    "act": "Information Technology Act 2000 — IT (Intermediary Guidelines) Rules 2021",
-    "section": "Section 66E, 67, 67A / IT Rules 2021",
-    "title": "Non-consensual intimate image sharing (Revenge Porn)",
-    "keywords": "private photos videos leaked revenge porn morphed images intimate images shared without consent",
-    "plain_text": "Sharing private intimate images without consent is an offence under IT Act Section 66E (violation of privacy — up to 3 years and fine) and Section 67/67A (obscene/sexually explicit material online). File complaint at cybercrime.gov.in and local police. Social media platforms must remove such content within 24 hours of reporting."
+    "act": "Information Technology Act 2000 and Amendment 2008",
+    "section": "Section 43, 66, 66A, 66B, 66C, 66D, 66E, 67, 67A, 72",
+    "title": "Cybercrime — Hacking, identity theft, online fraud",
+    "keywords": "hacking cyber crime phishing identity theft OTP fraud online fraud fake account social media hack password stolen account hacked",
+    "plain_text": "Key cyber offences: Section 66 (hacking/computer damage — up to 3 years), Section 66C (identity theft using another's password/OTP — up to 3 years), Section 66D (impersonation online — up to 3 years), Section 67 (obscene material — up to 5 years). Report: cybercrime.gov.in or nearest Cybercrime police station. For financial fraud: immediately call your bank and report to RBI Ombudsman. Freeze transaction within 3 days for zero-liability protection. Preserve screenshots, emails, transaction IDs."
+  },
+  {
+    "act": "Information Technology Act 2000 / IT Rules 2021",
+    "section": "Section 66E, 67, 67A; IT Rules Rule 3(1)(b)",
+    "title": "Non-consensual intimate image sharing (Revenge porn / Morphed images)",
+    "keywords": "private photos videos leaked revenge porn morphed images intimate images shared without consent deepfake nude fake image",
+    "plain_text": "Sharing private intimate images without consent: IT Act Section 66E (violation of privacy — up to 3 years and Rs. 2 lakh fine), Section 67/67A (obscene/sexually explicit material — up to 5 years). BNS Section 79 (voyeurism) also applies. Morphed/deepfake images using AI are also covered. Social media platforms must remove such content within 24 hours of reporting. File complaint at cybercrime.gov.in and local police. Request an emergency ex-parte injunction in court to stop further spread."
+  },
+  {
+    "act": "Information Technology Act 2000 / IT Rules 2021",
+    "section": "Section 43A, 72A; IT Rules Rule 5, 6",
+    "title": "Data privacy and data breach",
+    "keywords": "data breach personal data leaked privacy violation company leaked my data data misuse Aadhaar data stolen",
+    "plain_text": "Companies handling sensitive personal data (passwords, financial, health information) must protect it under IT Act Section 43A. Negligent data breach causing wrongful loss: compensation claim against the company. Misuse of personal information by a company employee (Section 72A): imprisonment up to 3 years and fine. Report data breach to CERT-In. File complaint with company's DPO (Data Protection Officer). In case of Aadhaar misuse, report to UIDAI at 1947."
   },
   {
     "act": "Right to Information Act 2005 (RTI)",
-    "section": "Section 3, 6, 7, 8, 19",
-    "title": "RTI — Getting Government Information",
-    "keywords": "RTI right to information government document transparency application public authority record",
-    "plain_text": "Any citizen can request information from any public authority (government department, PSU, etc.). How to file RTI: Write application to Public Information Officer (PIO) of the relevant department, pay Rs. 10 fee (exempted for BPL), submit in person or by post or online at rtionline.gov.in. Response time: 30 days (48 hours if life/liberty at stake). If PIO refuses, appeal to First Appellate Authority then Central/State Information Commission. PIO can be penalized for non-response."
+    "section": "Section 3, 6, 7, 8, 19, 20",
+    "title": "RTI — Right to Government Information",
+    "keywords": "RTI right to information government document transparency application public authority record file status government document",
+    "plain_text": "Any citizen can request information from any public authority (government department, PSU, local body, court registries, etc.). How to file: write to Public Information Officer (PIO), pay Rs. 10 fee (BPL applicants exempt). Online: rtionline.gov.in. Response time: 30 days (48 hours if life/liberty at stake). If PIO refuses or delays: First Appeal to First Appellate Authority (within 30 days), then Second Appeal to Central or State Information Commission. PIO can be penalized Rs. 250/day (up to Rs. 25,000) for delay. RTI cannot access personal privacy information or national security matters."
   },
   {
     "act": "Motor Vehicles Act 1988 and Amendment 2019",
-    "section": "Section 134, 140, 163A, 166",
-    "title": "Road Accident — Hit and Run, Compensation",
-    "keywords": "road accident car accident hit and run vehicle accident injury death compensation insurance claim",
-    "plain_text": "In road accident: (1) Immediate duty to help injured and report to nearest police station. (2) Hit and run victims can claim compensation from Solatium Fund (Ministry of Road Transport). (3) Accident compensation claim: File before Motor Accidents Claims Tribunal (MACT). No-fault liability (Section 140): Rs. 50,000 for death, Rs. 25,000 for grievous hurt — no need to prove negligence. Fault liability (Section 166): Higher compensation based on income and negligence. Insurance company is mandatory party."
+    "section": "Section 134, 140, 163A, 164, 166, 196",
+    "title": "Road accident — compensation, hit and run, insurance",
+    "keywords": "road accident car accident hit and run vehicle accident injury death compensation insurance claim MACT motor accident",
+    "plain_text": "Immediate duty after accident: stop, help injured, report to nearest police station and inform insurance company. Hit and run: victims get compensation from Solatium Fund (Rs. 25,000 for grievous hurt, Rs. 2 lakh for death). Compensation from insurer: file before Motor Accidents Claims Tribunal (MACT). No-fault liability (Section 164): Rs. 5 lakh for death, Rs. 2.5 lakh for permanent disability — no need to prove negligence. Fault liability: higher compensation based on income, age, and negligence. Limitation: 6 months to file accident claim (can be extended). Driving without insurance: imprisonment up to 3 months and fine."
   },
   {
     "act": "Protection of Children from Sexual Offences Act 2012 (POCSO)",
-    "section": "Section 3, 4, 7, 8, 11, 12, 19",
+    "section": "Section 3, 4, 5, 6, 7, 8, 11, 12, 19, 20, 21",
     "title": "Child Sexual Abuse — POCSO",
-    "keywords": "child abuse sexual abuse minor child molestation POCSO child pornography",
-    "plain_text": "POCSO protects children (under 18) from sexual assault, sexual harassment, and pornography. All offences are cognizable and non-bailable. Reporting is MANDATORY for anyone who has knowledge of offence (failure to report is itself an offence). Child-friendly procedures: statement recorded at home or comfortable place, no repeated questioning, in-camera trial. Report to police or CHILDLINE 1098."
+    "keywords": "child abuse sexual abuse minor child molestation POCSO child pornography child exploitation under 18",
+    "plain_text": "POCSO protects children (under 18) from sexual assault, sexual harassment, and child pornography. All offences: cognizable, non-bailable, with special courts. Reporting is MANDATORY for anyone with knowledge (failure to report: punishment up to 6 months). Child-friendly procedure: statement at home or comfort place, no repeated questioning, in-camera trial, support person allowed. Report: police or CHILDLINE 1098. Accused is presumed guilty (reverse burden of proof). Penetrative sexual assault: minimum 10 years to life."
   },
   {
-    "act": "Scheduled Caste and Scheduled Tribe (Prevention of Atrocities) Act 1989",
-    "section": "Section 3, 4, 14, 15A",
+    "act": "Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act 1989",
+    "section": "Section 3, 3(2), 4, 14, 15A, 18",
     "title": "Atrocities against SC/ST — Rights and Procedures",
-    "keywords": "caste discrimination SC ST atrocity untouchability caste abuse humiliation land grab",
-    "plain_text": "Intentional insult, intimidation, land grabbing, forced labour, social boycott against SC/ST members is a cognizable, non-bailable offence. Special courts (SC/ST Courts) handle these cases. Victim entitled to compensation, relief, rehabilitation. A senior police officer (DSP level) must personally investigate. Bail is not easily granted to the accused."
+    "keywords": "caste discrimination SC ST atrocity untouchability caste abuse humiliation dalit land grab social boycott caste slur",
+    "plain_text": "Intentional insult, intimidation, land grabbing, forced labour, social boycott, or caste-based abuse against SC/ST members is a cognizable, non-bailable offence. Special SC/ST courts handle these cases. Victim entitled to compensation, immediate relief (food, shelter, travel), and rehabilitation. DSP-level officer must personally investigate. Bail is harder for the accused to obtain. Anticipatory bail is generally not available to accused in SC/ST Atrocities cases. Government must provide legal aid to the victim."
   },
   {
-    "act": "Industrial Disputes Act 1947 / Payment of Wages Act 1936 / Shops and Establishments Acts",
-    "section": "ID Act Section 25F, 25G; Wages Act Section 3, 4",
-    "title": "Labour Rights — Unfair Dismissal, Unpaid Wages",
-    "keywords": "fired job terminated dismissed wrongful termination salary not paid dues not cleared unpaid wages labor",
-    "plain_text": "Employer cannot retrench a permanent worker (in establishments with 100+ workers) without: 3 months notice or pay in lieu, retrenchment compensation (15 days wages per year of service), government permission. Unpaid wages: Complaint to Labour Commissioner or Payment of Wages Authority within 1 year. Remedy: reinstatement, back wages, or compensation. Wrongful dismissal: approach Labour Court."
+    "act": "Industrial Disputes Act 1947 / Payment of Wages Act 1936 / Code on Wages 2019",
+    "section": "ID Act Section 25F, 25G, 25N; Wages Act Section 3, 4, 5",
+    "title": "Labour rights — Wrongful termination and unpaid wages",
+    "keywords": "fired job terminated dismissed wrongful termination salary not paid dues not cleared unpaid wages labor retrenchment layoff",
+    "plain_text": "Employer cannot retrench a permanent worker (100+ workers establishment) without: 3 months notice/pay, retrenchment compensation (15 days wages per year of service), government permission. Unpaid wages: complaint to Labour Commissioner or Authority under Code on Wages within 3 years. Wrongful dismissal: approach Labour Court for reinstatement and back wages. Standing Orders must be followed. Forced resignation (under pressure): may be treated as wrongful termination. Preserve offer letter, salary slips, appointment letter, and any termination notice."
+  },
+  {
+    "act": "Employees' Provident Funds and Miscellaneous Provisions Act 1952",
+    "section": "Section 7A, 12, 14",
+    "title": "PF — Provident Fund rights",
+    "keywords": "PF provident fund EPF EPFO employer not depositing PF deducted not paid gratuity PF withdrawal",
+    "plain_text": "Employer must deposit both employee's and employer's share of PF (12% each) to EPFO. Non-deposit of PF despite deducting from salary is a criminal offence (Section 14). Complaint: EPFO regional office or file online at epfigms.gov.in (helpline 1800-118-005). Employer withholding gratuity (Payment of Gratuity Act 1972): entitlement after 5 continuous years — file complaint with Controlling Authority. PF withdrawal: apply online through UAN portal. Limitation to file PF case: no strict limitation (file as soon as possible)."
   },
   {
     "act": "Negotiable Instruments Act 1881",
-    "section": "Section 138, 139, 140, 141, 142",
-    "title": "Cheque Bounce",
-    "keywords": "cheque bounce dishonoured cheque returned cheque insufficient funds bounced cheque loan",
-    "plain_text": "Cheque bouncing for insufficient funds or other technical reasons: Payee must send written notice within 30 days of cheque return. Drawer has 15 days to pay. If unpaid, file criminal complaint in court within 30 days after 15-day notice period. Punishment: imprisonment up to 2 years or twice the cheque amount or both. This is a compoundable offence (can be settled by payment). Also file civil suit for recovery separately."
+    "section": "Section 138, 139, 140, 141, 142, 147",
+    "title": "Cheque bounce",
+    "keywords": "cheque bounce dishonoured cheque returned cheque insufficient funds bounced cheque loan repayment stop payment",
+    "plain_text": "Cheque bouncing for insufficient funds or other reasons: payee must send written legal notice within 30 days of receiving cheque return memo. Drawer has 15 days from notice to pay. If unpaid, file criminal complaint in court within 30 days after the 15-day notice period expires. Punishment: imprisonment up to 2 years or twice the cheque amount, or both. This is compoundable (can be settled). Also file civil suit for recovery. Total window from cheque return to court filing: 75 days. Do not miss any deadline — it will bar your claim permanently."
   },
   {
-    "act": "Specific Relief Act 1963 / Code of Civil Procedure (CPC) 1908",
-    "section": "Specific Relief Act Section 10, 38; CPC Order 39",
-    "title": "Civil Injunction — Stopping Someone from Doing Something",
-    "keywords": "injunction stop court order restrain someone civil court property dispute construction encroachment",
-    "plain_text": "When immediate action is needed to prevent irreversible harm (e.g., someone demolishing your property, encroachment), you can apply for a temporary injunction in civil court. The court can pass an ex-parte (one-sided, emergency) injunction the same day in urgent cases. Limitation for civil suits varies by type of dispute (generally 3 years for contract, 12 years for property)."
+    "act": "Code of Civil Procedure 1908 / Specific Relief Act 1963",
+    "section": "CPC Order 39 Rule 1–2; Specific Relief Act Section 38, 39",
+    "title": "Civil injunction — Emergency court order",
+    "keywords": "injunction stop court order restrain someone civil court property dispute construction encroachment demolish urgent court order",
+    "plain_text": "When someone is about to take an action that will cause irreversible harm (demolishing your property, taking your assets, encroaching land), you can apply for a temporary injunction (stay order) in civil court. The court can pass an ex-parte (emergency, one-sided) injunction the same day in urgent cases. Three conditions must be met: (1) Prima facie case in your favour, (2) Balance of convenience in your favour, (3) Irreparable harm if injunction not granted. File a civil suit along with injunction application. Limitation for injunction: same as the underlying civil suit (3–12 years depending on nature)."
   },
   {
     "act": "Constitution of India",
-    "section": "Article 21, 22, 32, 226",
-    "title": "Fundamental Rights — Personal Liberty and Writ Petitions",
-    "keywords": "fundamental rights personal liberty illegal detention habeas corpus writ petition high court supreme court government violation",
-    "plain_text": "Article 21: Right to life and personal liberty. Article 22: Protection against arbitrary arrest (right to know grounds, right to lawyer, produced before magistrate in 24 hours). Article 32: Right to approach Supreme Court for enforcement of fundamental rights (Writ Petition). Article 226: Right to approach High Court. Habeas Corpus: If someone is illegally detained, High Court can order their release. Police brutality, custodial violence, or illegal detention can be challenged."
+    "section": "Article 19, 21, 22, 32, 226",
+    "title": "Fundamental Rights — Liberty, writs, and remedies",
+    "keywords": "fundamental rights personal liberty illegal detention habeas corpus writ petition high court supreme court government violation arrest illegal",
+    "plain_text": "Article 21: Right to life and personal liberty — cannot be taken away except by law. Article 22: Protection against arbitrary arrest (right to know grounds, right to lawyer, produced before Magistrate in 24 hours). Article 32: Right to approach Supreme Court for enforcement of fundamental rights. Article 226: Right to approach High Court for any legal right violation. Writ types: Habeas Corpus (illegal detention), Mandamus (force authority to perform duty), Certiorari (quash illegal order), Prohibition (stop lower authority), Quo Warranto (challenge appointment). Police brutality and custodial violence are violations of Article 21."
   },
   {
     "act": "Limitation Act 1963",
-    "section": "Section 3, Schedule I",
-    "title": "Limitation Periods — Deadlines to File Cases",
-    "keywords": "limitation period deadline time limit file case expired missed deadline court case how long",
-    "plain_text": "Key limitation periods in India: Contract disputes — 3 years from breach. Property disputes — 12 years (possession), 3 years (money). Tort/personal injury — 3 years. Consumer forum — 2 years from cause of action. Cheque bounce — 1 month to file after notice period. FIR — No limitation for serious crimes. Limitation can be extended if fraud, mistake, or disability caused delay. Missing a deadline can permanently bar a claim — act promptly."
+    "section": "Section 3, 5, 17, 18; Schedule I",
+    "title": "Limitation periods — Deadlines to file cases",
+    "keywords": "limitation period deadline time limit file case expired missed deadline court case how long time barred",
+    "plain_text": "KEY LIMITATION PERIODS: Contract disputes — 3 years from breach. Property recovery (possession) — 12 years. Money due on contract — 3 years. Consumer forum — 2 years from cause of action. Cheque bounce — 1 month from expiry of 15-day notice period. FIR — no limitation for serious crimes. Accident/tort — 3 years. Limitation can be extended for fraud (Section 17), mistake (Section 18), or disability (Section 6). MISSING A DEADLINE permanently bars the claim in most cases. File court application immediately if deadline is close. Court can condone delay for sufficient cause (Section 5) — apply with reasons."
   },
   {
     "act": "Legal Services Authorities Act 1987",
-    "section": "Section 12, 13",
-    "title": "Free Legal Aid",
-    "keywords": "free legal aid lawyer poor no money legal help DLSA SLSA legal services authority",
-    "plain_text": "Free legal aid is a constitutional right (Article 39A). Eligible persons: those with annual income below specified limit, SC/ST, women, children, disabled, industrial workers, victims of disaster, persons in custody. Apply to: District Legal Services Authority (DLSA) at every district court, State Legal Services Authority (SLSA), or NALSA (National). They provide free lawyers, legal advice, mediation. Lok Adalats can settle disputes amicably."
+    "section": "Section 12, 13, 20, 21",
+    "title": "Free legal aid — NALSA and DLSA",
+    "keywords": "free legal aid lawyer poor no money legal help DLSA SLSA legal services authority NALSA 15100 free lawyer",
+    "plain_text": "FREE LEGAL AID is a constitutional right (Article 39A). Who is eligible: annual income below Rs. 3 lakh (Central), women, children, SC/ST, disabled, industrial workers, victims of disaster or trafficking, persons in custody. How to apply: go to District Legal Services Authority (DLSA) at every district court, or call NALSA Helpline: 15100. They provide free lawyers, legal advice, mediation, Lok Adalat referral. Lok Adalat (Section 20): settles disputes amicably — award is a decree and is final. Mobile Legal Aid Clinics also available in rural areas."
   },
   {
     "act": "Indian Evidence Act 1872 / Bharatiya Sakshya Adhiniyam 2023",
-    "section": "Section 3, 24, 25, 27, 65B",
-    "title": "Evidence — What is admissible, Electronic evidence",
-    "keywords": "evidence proof electronic evidence screenshot WhatsApp message email video CCTV admissible court",
-    "plain_text": "Electronic evidence (screenshots, WhatsApp messages, emails, call recordings, CCTV footage) is admissible in Indian courts under Section 65B of Evidence Act (certificate required for electronic records). Confession to police is NOT admissible. Confession made freely before Magistrate is admissible. Preserve original devices and do not delete or alter digital evidence. Take screenshots with timestamps visible. Get a Section 65B certificate if possible."
+    "section": "Section 3, 24, 25, 27, 65A, 65B",
+    "title": "Evidence — Electronic evidence and admissibility",
+    "keywords": "evidence proof electronic evidence screenshot WhatsApp message email video CCTV admissible court call recording certificate",
+    "plain_text": "Electronic evidence (screenshots, WhatsApp messages, emails, call recordings, CCTV footage) is admissible in court under Section 65B. REQUIREMENT: produce a Section 65B certificate from the device owner/custodian certifying that the electronic record was produced accurately. Preserve original devices — do not delete or alter digital evidence. Screenshots must show timestamps, sender IDs, and context. Confession to police is NOT admissible. Confession made freely before a Magistrate IS admissible. Evidence tampered or fabricated is itself an offence. Chain of custody must be maintained for physical evidence."
   },
   {
-    "act": "Dowry Prohibition Act 1961",
-    "section": "Section 3, 4, 6",
-    "title": "Dowry — Giving, Taking or Demanding",
-    "keywords": "dowry demand marriage jewelry gold money in-laws husband family demand gifts",
-    "plain_text": "Giving or taking dowry is illegal. Demanding dowry is punishable with imprisonment minimum 6 months, maximum 2 years, and fine Rs. 10,000 or value of dowry (whichever is more). Stridhan (wife's own gifts and property) must be returned to her on demand. Dowry death (Section 304B IPC/BNS Section 80) — if woman dies within 7 years of marriage due to burns/injury connected to dowry demand, presumption of dowry death arises against husband and in-laws."
+    "act": "Dowry Prohibition Act 1961 / BNS 2023",
+    "section": "Section 3, 4, 6 DPA; BNS Section 80",
+    "title": "Dowry — Prohibition, demand, and dowry death",
+    "keywords": "dowry demand marriage jewelry gold money in-laws husband family demand gifts dowry death murder bride burning",
+    "plain_text": "Giving or taking dowry is illegal. Demanding dowry: minimum 6 months, maximum 2 years imprisonment and fine of Rs. 10,000 or value of dowry (whichever is more). Stridhan (wife's own property and gifts received at or after marriage) belongs solely to the wife and must be returned on demand. Dowry death (BNS Section 80): if a woman dies within 7 years of marriage due to burns, injury, or suspicious circumstances connected to dowry demands, the presumption of dowry death arises against husband and in-laws (punishable with 7 years to life imprisonment). Preserve all evidence of dowry demands: messages, witnesses, videos, transfer records."
   },
   {
-    "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act 2013 — POSH Act",
-    "section": "Section 2, 4, 9, 11, 13",
-    "title": "Workplace Sexual Harassment (POSH)",
-    "keywords": "sexual harassment workplace office boss colleague POSH ICC internal complaint committee unwanted advances",
-    "plain_text": "Every employer with 10+ employees must have an Internal Complaints Committee (ICC). Complaint must be filed within 3 months of incident. ICC inquiry must be completed within 90 days. Relief: warning, termination of harasser, compensation. If no ICC or employer doesn't act: file complaint with Local Complaints Committee (LCC) at District level. Police complaint under IPC/BNS is also an option. Government employees can approach Sexual Harassment Complaints Committee."
+    "act": "Sexual Harassment of Women at Workplace Act 2013 (POSH Act)",
+    "section": "Section 2, 4, 9, 11, 13, 16, 19",
+    "title": "Workplace sexual harassment (POSH)",
+    "keywords": "sexual harassment workplace office boss colleague POSH ICC internal complaint committee unwanted advances quid pro quo hostile environment",
+    "plain_text": "Every employer with 10+ employees MUST have an Internal Complaints Committee (ICC). Unorganized sector employers must report to Local Complaints Committee (LCC) at district level. Complaint must be filed within 3 months of incident (extendable to 6 months for sufficient reason). ICC inquiry: must be completed within 90 days. Remedies: warning, salary deduction, termination of harasser, compensation. False complaints also punishable. Types covered: quid pro quo (demand for favours) and hostile work environment. Complaint is strictly confidential. If employer has no ICC, it is itself an offence. Police FIR is also an option simultaneously."
   },
   {
     "act": "Maintenance and Welfare of Parents and Senior Citizens Act 2007",
-    "section": "Section 4, 5, 9, 16, 23",
-    "title": "Senior Citizen Rights — Maintenance and Property",
-    "keywords": "old parents elderly abandoned maintenance children support senior citizen property transfer",
-    "plain_text": "Children (including adopted) and grandchildren are legally obligated to maintain parents and grandparents. If neglected, senior citizens can apply to Maintenance Tribunal (Sub-Divisional Officer level). Can get up to Rs. 10,000/month maintenance. If property was transferred to children and they neglect parents, the transfer can be declared VOID. Abandoning senior citizens in care homes, hospitals etc. is a criminal offence."
+    "section": "Section 4, 5, 9, 16, 22, 23",
+    "title": "Senior citizen rights — Maintenance and property transfer",
+    "keywords": "old parents elderly abandoned maintenance children support senior citizen property transfer neglect parents nursing home",
+    "plain_text": "Adult children and grandchildren are legally obligated to maintain parents/grandparents who cannot support themselves. Application to Maintenance Tribunal (Sub-Divisional Magistrate): maintenance up to Rs. 10,000/month (some states higher). Property transfer reversal (Section 23): if parents transferred property to a child who then neglects them, the transfer can be declared VOID. Abandoning senior citizens (in hospitals, pilgrimages, etc.) is a criminal offence. Each state has a Senior Citizens Helpline (Elderline: 14567). Complaint can also be filed with district Social Welfare Officer."
+  },
+  {
+    "act": "Prevention of Money Laundering Act 2002 (PMLA)",
+    "section": "Section 3, 4, 12, 13",
+    "title": "Money laundering",
+    "keywords": "money laundering black money corruption bribe shell company property bought from illegal money Enforcement Directorate ED",
+    "plain_text": "Money laundering is the process of converting proceeds of crime into apparently legitimate assets. It is a cognizable, non-bailable offence investigated by the Enforcement Directorate (ED). Punishment: rigorous imprisonment 3–7 years (up to 10 years in some cases) and fine. Reporting entities (banks, financial institutions) must report suspicious transactions to Financial Intelligence Unit (FIU). If you have received funds or property from a person you believe may be engaged in crime, seek immediate legal advice. Bribing a public official is separately punishable under Prevention of Corruption Act 1988."
+  },
+  {
+    "act": "Prevention of Corruption Act 1988 / Lokpal and Lokayukta Act 2013",
+    "section": "Section 7, 8, 9, 12, 13 PC Act",
+    "title": "Bribery and corruption",
+    "keywords": "bribe government official corrupt police officer bribery demand money for service government work public servant",
+    "plain_text": "Giving or taking a bribe to or by a public servant is a criminal offence. Bribe-giver punishment: up to 7 years and fine. Bribe-taker punishment: minimum 3 years, up to 7 years and fine. How to report: Anti-Corruption Bureau (ACB) of your state (most have online complaint portals), Central Vigilance Commission (CVC) at cvc.gov.in for central government employees, Lokpal (central) or Lokayukta (state). You can set a trap with ACB: approach them with evidence of demand and they will conduct a sting. Whistleblower Protection Act 2014 protects persons reporting corruption."
+  },
+  {
+    "act": "Bharatiya Nyaya Sanhita (BNS) 2023 / IPC 1860",
+    "section": "BNS Section 336 / IPC Section 465–471",
+    "title": "Forgery of documents",
+    "keywords": "forged document fake document false signature fake signature property forgery fake deed forged cheque",
+    "plain_text": "Forgery: making a false document with intent to cause damage or injury to the public or any person. Punishment: imprisonment up to 2 years and fine. Forgery of valuable security, will, or authority: up to 7 years. Using a forged document: same punishment as making it. Common examples: forged property deeds, fake educational certificates, forged cheques. File FIR and preserve original documents and any expert handwriting/stamp comparison evidence. Expert opinion on documents can be obtained from government-approved forensic labs."
+  },
+  {
+    "act": "Bharatiya Nyaya Sanhita (BNS) 2023",
+    "section": "BNS Section 78",
+    "title": "Stalking",
+    "keywords": "stalking following watching monitoring online stalking cyber stalking ex partner harassment track location",
+    "plain_text": "Stalking (following, contacting, or monitoring a woman against her will): imprisonment up to 3 years for first offence, up to 5 years for subsequent offence. Online stalking (monitoring social media, tracking device, hacking email/phone) is also covered. Women stalking men: covered under civil harassment laws and IT Act. Preserve: records of all contacts, screenshots of messages, call logs. File FIR under BNS Section 78. Court can issue restraining order. In urgent cases, approach court for an ex-parte injunction."
+  },
+  {
+    "act": "Code of Civil Procedure 1908 (CPC)",
+    "section": "Order 21; Section 51–54",
+    "title": "Executing a court decree — Recovering a judgment debt",
+    "keywords": "court decree execution recovery money awarded not paying decree holder judgment enforcement attachment",
+    "plain_text": "After winning a court case, if the other party refuses to pay the decreed amount: file an Execution Petition in the same court that passed the decree. Court can: attach and sell the debtor's property or bank accounts, arrest and detain the debtor (for certain types of decrees), appoint a receiver. Execution must be filed within 12 years of the decree. If the other party has transferred property to avoid payment, file a suit for fraudulent transfer (Section 53 Transfer of Property Act). Bank account attachment is the fastest recovery method — provide the court with the debtor's bank details."
+  },
+  {
+    "act": "Hindu Succession Act 1956 / Indian Succession Act 1925",
+    "section": "Hindu Succession Act Section 6, 8, 15, 16; ISA Section 32, 63",
+    "title": "Inheritance and succession rights",
+    "keywords": "inheritance will property death father died mother died succession property share siblings excluded from property",
+    "plain_text": "Hindu inheritance (Hindu Succession Act): daughters have equal coparcenary rights in ancestral property as sons (Amendment 2005). A wife inherits along with children as Class I heirs. Making a Will: any adult of sound mind can make a will. For Hindus, will must be signed and witnessed by two witnesses. Registered will is stronger evidence. Without a will (intestate): property divided equally among Class I heirs. Challenging a will: file probate petition or suit for declaration of invalidity within 12 years. Muslims: governed by Muslim Personal Law (1/3 can be bequeathed; rest per Shariat). Christians: Indian Succession Act 1925."
+  },
+  {
+    "act": "Hindu Marriage Act 1955 / Special Marriage Act 1954",
+    "section": "HMA Section 5, 9, 10, 11, 12, 13, 13B, 24, 25",
+    "title": "Marriage — Divorce, maintenance, and matrimonial rights",
+    "keywords": "divorce separation maintenance alimony husband wife marital dispute marriage dissolution custody children",
+    "plain_text": "Grounds for divorce (Hindu): cruelty, adultery, desertion (2 years), conversion, mental illness, leprosy, venereal disease, renunciation, presumed death. Mutual consent divorce: both parties agree, file petition, 6-month cooling period (court may waive). Maintenance (Section 24): either spouse can claim interim maintenance during divorce proceedings. Permanent alimony (Section 25): court may award lump sum or monthly payment based on income and assets. Restitution of conjugal rights (Section 9): court can direct deserting spouse to return. Custody of children: court decides based on child's best interest. Jurisdiction: court in area where parties last resided together."
+  },
+  {
+    "act": "Guardians and Wards Act 1890 / Hindu Minority and Guardianship Act 1956",
+    "section": "HMGA Section 6, 13; GWA Section 7, 8, 17",
+    "title": "Child custody and guardianship",
+    "keywords": "custody children divorce child custody visitation rights guardian minor child welfare parental kidnapping",
+    "plain_text": "After separation or divorce, custody of children is decided by the court based solely on the child's welfare and best interest. Natural guardian: for a Hindu boy or unmarried girl below 5 years, the mother is the natural guardian. For older children, the father is natural guardian (but court can override this). A child above 9 years: court considers child's own preference. Parental child abduction (taking child without court order): FIR under BNS Section 137/138 (kidnapping). Interim custody orders: file application in family court for immediate custody. International child abduction: Hague Convention (India is not a signatory but courts exercise jurisdiction)."
+  },
+  {
+    "act": "Environment Protection Act 1986 / National Green Tribunal Act 2010",
+    "section": "EPA Section 15, 17; NGT Act Section 14, 15",
+    "title": "Environmental violations and NGT",
+    "keywords": "pollution factory noise pollution air pollution water pollution illegal mining environmental damage dumping waste NGT",
+    "plain_text": "Any person or group of persons can approach the National Green Tribunal (NGT) for environmental violations: illegal pollution, noise nuisance, damage to forests or water bodies. No filing fee for public interest matters. NGT can award compensation, order restoration, and direct closure of offending unit. State Pollution Control Boards receive complaints about industries violating pollution norms. Noise pollution (Noise Pollution Rules 2000): complaint to local police or District Magistrate. Illegal construction in eco-sensitive zones: complaint to State Environment Impact Assessment Authority."
   }
 ]

@@ -81,7 +81,9 @@ Clean, structured output printed to terminal
 |---|---|---|
 | **LLM** | Qwen 3.8B-27B via [Groq](https://console.groq.com) | Free, fast, open-source model |
 | **RAG** | BM25 (`rank-bm25`) | Local, no embedding API needed |
-| **Knowledge Base** | Hand-curated JSON from open Indian legal sources | Grounded, accurate legal data |
+| **Live Case Law** | IndianKanoon API (`indiankanoon.py`) | Real court judgements (optional) |
+| **Language Detection** | Unicode script analysis (`language.py`) | 12 languages, zero API calls |
+| **Knowledge Base** | Hand-curated JSON from open Indian legal sources | 65+ entries, grounded in actual law |
 | **Config** | `python-dotenv` + `config.py` | API key never touches main code |
 | **Interface** | Python CLI (terminal) | Simple, works everywhere |
 
@@ -89,23 +91,24 @@ Clean, structured output printed to terminal
 
 ## 📚 Legal Knowledge Base
 
-The RAG knowledge base (`knowledge/indian_laws.json`) covers 34+ entries across:
+The RAG knowledge base covers 65+ entries across two files (`indian_laws.json` + `extended_laws.json`):
 
-- **Criminal Law** — BNS/IPC (theft, assault, cheating, threats, defamation, rape)
-- **Procedure** — BNSS/CrPC (FIR, Zero FIR, arrest rights, anticipatory bail)
-- **Family Law** — Domestic Violence Act, Dowry Prohibition Act, POCSO
-- **Consumer Law** — Consumer Protection Act 2019
-- **Property & Tenancy** — Transfer of Property Act, Rent Control
-- **Contract Law** — Indian Contract Act 1872
-- **Cyber Law** — IT Act 2000 (hacking, OTP fraud, identity theft, revenge porn)
-- **Labour Law** — Industrial Disputes Act, Payment of Wages Act
-- **Civil Law** — Cheque Bounce (NI Act), Injunctions, Limitation Act
-- **Constitutional Rights** — Articles 21, 22, 32, 226 (fundamental rights, writs)
-- **Social Protection** — SC/ST Atrocities Act, POSH Act, Senior Citizens Act
-- **Access to Justice** — RTI Act, Free Legal Aid (NALSA/DLSA)
-- **Evidence** — Indian Evidence Act / Bharatiya Sakshya Adhiniyam (electronic evidence)
+- **Criminal Law** — BNS/IPC (theft, assault, cheating, threats, defamation, rape, NDPS drugs)
+- **Procedure** — BNSS/CrPC (FIR, Zero FIR, arrest rights, anticipatory bail, bail types)
+- **Family Law** — Domestic Violence Act, Dowry Prohibition Act, POCSO, Senior Citizens Act
+- **Consumer Law** — Consumer Protection Act 2019, CCPA, misleading advertisements
+- **Property & Tenancy** — Transfer of Property Act, Rent Control, registration, benami
+- **Contract Law** — Indian Contract Act 1872, Specific Relief Act (injunctions)
+- **Cyber Law** — IT Act 2000 (hacking, OTP fraud, identity theft, revenge porn, deepfakes)
+- **Labour Law** — Industrial Disputes Act, Payment of Wages Act, EPFO/PF, POSH Act, Compensation
+- **Civil Law** — Cheque Bounce (NI Act), Limitation Act, Lok Adalat, insolvency
+- **Constitutional Rights** — Articles 21, 22, 32, 226 (fundamental rights, writs, free legal aid)
+- **Social Protection** — SC/ST Atrocities Act, POSH Act, Disability Rights (RPWD 2016), POCSO
+- **Access to Justice** — RTI Act, Free Legal Aid (NALSA/DLSA), Lok Adalat
+- **Environment & Food** — NGT, FSSAI, Pollution Control, Electricity Act
+- **State Law** — Rent Control Acts (state-specific), motor accident claims (MACT)
 
-> The knowledge base is easily extensible — add more entries to `knowledge/indian_laws.json` in the same format and they are automatically indexed on the next run.
+> The knowledge base is easily extensible — add more entries to any `.json` file in the `knowledge/` folder and they are automatically indexed on the next run.
 
 ---
 
@@ -225,14 +228,16 @@ All settings are controlled via environment variables in your `.env` file:
 ## 🗺️ Roadmap
 
 - [x] Terminal CLI with conversation history
-- [x] BM25 RAG over Indian legal knowledge base
+- [x] BM25 RAG over Indian legal knowledge base (34+ entries)
 - [x] API key abstraction via config module
-- [ ] Image and PDF upload support (legal notices, contracts)
-- [ ] Video analysis for evidence
-- [ ] Hindi and regional language support
+- [x] Image and PDF upload support (legal notices, contracts)
+- [x] Video and audio analysis for evidence
+- [x] Hindi and regional language support (12 languages: Hindi, Telugu, Tamil, Bengali, Marathi, Kannada, Malayalam, Gujarati, Punjabi, Odia, Urdu + Hinglish)
+- [x] Integration with IndianKanoon API for live case law search (optional)
+- [x] Expanded knowledge base (65+ entries: state laws, RTI, consumer, cyber, labour, disability, environment, and more)
 - [ ] Web interface
-- [ ] Expanded knowledge base (state-specific laws, case law)
-- [ ] Integration with IndianKanoon API for live case law search
+- [ ] State-level knowledge files (Maharashtra, Delhi, Karnataka, etc.)
+- [ ] Offline Hindi BM25 retrieval (transliteration support)
 
 ---
 

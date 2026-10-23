@@ -1,3 +1,20 @@
-groq
-python-dotenv
-rank-bm25
+# ── Core runtime ──────────────────────────────────────────────────────────────
+groq>=0.9.0           # Groq LLM API client (chat + Whisper + vision)
+python-dotenv>=1.0.0  # .env file loading
+rank-bm25>=0.2.2      # BM25 retrieval (no embedding API needed)
+requests>=2.31.0      # HTTP client for IndianKanoon live case law API
+
+# ── Document processing ────────────────────────────────────────────────────────
+pdfplumber>=0.11.0    # PDF text extraction (primary)
+pymupdf>=1.24.0       # PDF text extraction (fallback, also known as fitz)
+python-docx>=1.1.0    # DOCX / Word document processing
+
+# ── Image processing ───────────────────────────────────────────────────────────
+Pillow>=10.0.0        # Image handling (frame extraction from video, resize)
+
+# ── Video / audio processing ───────────────────────────────────────────────────
+moviepy>=1.0.3        # Video frame extraction and audio separation
+numpy>=1.26.0         # Required by moviepy for frame array handling
+
+# ── Testing ────────────────────────────────────────────────────────────────────
+pytest>=8.0.0         # Test framework
