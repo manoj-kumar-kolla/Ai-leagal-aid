@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1830"/>
+      <stop offset="50%" stop-color="#0e2246"/>
+      <stop offset="100%" stop-color="#071020"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0b04e"/>
+      <stop offset="100%" stop-color="#b8872b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="rgba(14,107,92,0.3)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Subtle grid pattern -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Scales of Justice Symbol -->
+  <g transform="translate(850, 200)">
+    <!-- Central Pillar -->
+    <rect x="-4" y="-80" width="8" height="220" rx="4" fill="url(#gold)"/>
+    <circle cx="0" cy="-84" r="14" fill="url(#gold)"/>
+    <path d="M -40 140 Q 0 110 40 140 Z" fill="url(#gold)"/>
+    <!-- Horizontal Beam -->
+    <line x1="-140" y1="-50" x2="140" y2="-50" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="-140" cy="-50" r="7" fill="url(#gold)"/>
+    <circle cx="140" cy="-50" r="7" fill="url(#gold)"/>
+    <!-- Left Pan -->
+    <line x1="-140" y1="-50" x2="-180" y2="30" stroke="url(#gold)" stroke-width="2.5"/>
+    <line x1="-140" y1="-50" x2="-100" y2="30" stroke="url(#gold)" stroke-width="2.5"/>
+    <path d="M -190 30 Q -140 65 -90 30 Z" fill="url(#gold)" opacity="0.9"/>
+    <!-- Right Pan -->
+    <line x1="140" y1="-50" x2="100" y2="30" stroke="url(#gold)" stroke-width="2.5"/>
+    <line x1="140" y1="-50" x2="180" y2="30" stroke="url(#gold)" stroke-width="2.5"/>
+    <path d="M 90 30 Q 140 65 190 30 Z" fill="url(#gold)" opacity="0.9"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(100, 160)">
+    <!-- Tagline Badge -->
+    <rect x="0" y="0" width="340" height="42" rx="21" fill="rgba(224,176,78,0.15)" stroke="#e0b04e" stroke-width="1.5"/>
+    <text x="24" y="27" font-family="-apple-system,system-ui,sans-serif" font-size="16" font-weight="700" fill="#e0b04e" letter-spacing="1.5">⚖️ INDIA LEGAL ASSISTANT</text>
+
+    <!-- Main Title -->
+    <text x="0" y="130" font-family="Georgia,serif" font-size="88" font-weight="700" fill="#ffffff">ALA</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="195" font-family="-apple-system,system-ui,sans-serif" font-size="36" font-weight="600" fill="#e0b04e">Legal Aid in Plain Language</text>
+
+    <!-- Description -->
+    <text x="0" y="260" font-family="-apple-system,system-ui,sans-serif" font-size="22" fill="#b9c4d6">Understand your rights. Know your options. Protect your interests.</text>
+    <text x="0" y="295" font-family="-apple-system,system-ui,sans-serif" font-size="20" fill="#8898aa">100% Free · Private · Local RAG · BNS &amp; BNSS 2023 · 12 Regional Languages</text>
+
+    <!-- Feature pills -->
+    <g transform="translate(0, 340)">
+      <rect x="0" y="0" width="190" height="36" rx="8" fill="rgba(14,107,92,0.3)" stroke="#5fc4ad" stroke-width="1"/>
+      <text x="16" y="23" font-family="-apple-system,system-ui,sans-serif" font-size="14" font-weight="600" fill="#5fc4ad">⚡ &lt; 2s Analysis</text>
+
+      <rect x="210" y="0" width="190" height="36" rx="8" fill="rgba(14,107,92,0.3)" stroke="#5fc4ad" stroke-width="1"/>
+      <text x="226" y="23" font-family="-apple-system,system-ui,sans-serif" font-size="14" font-weight="600" fill="#5fc4ad">📄 Document OCR</text>
+
+      <rect x="420" y="0" width="210" height="36" rx="8" fill="rgba(14,107,92,0.3)" stroke="#5fc4ad" stroke-width="1"/>
+      <text x="436" y="23" font-family="-apple-system,system-ui,sans-serif" font-size="14" font-weight="600" fill="#5fc4ad">🤝 Free Legal Aid</text>
+    </g>
+  </g>
+</svg>

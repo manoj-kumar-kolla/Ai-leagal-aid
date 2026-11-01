@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ALA – Legal aid in plain language</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#eceff2;--paper:#fff;--ink:#141c2b;--mute:#5a6577;--line:#cfd5de;--acc:#0e6b5c;--accbg:#dff0ec;--gold:#b8872b;--warn:#9a4a05;--warnbg:#fdf0dc;--red:#b42318;--redbg:#fde8e6;--glow:rgba(14,107,92,.14);
+--serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151d;--paper:#171e29;--ink:#e8ecf2;--mute:#9aa5b6;--line:#2c3544;--acc:#5fc4ad;--accbg:#17332d;--gold:#e0b04e;--warn:#f0b35a;--warnbg:#3a2c14;--red:#ff8b7e;--redbg:#3a1c1a;--glow:rgba(95,196,173,.13)}}
+:root[data-theme="dark"]{--bg:#10151d;--paper:#171e29;--ink:#e8ecf2;--mute:#9aa5b6;--line:#2c3544;--acc:#5fc4ad;--accbg:#17332d;--gold:#e0b04e;--warn:#f0b35a;--warnbg:#3a2c14;--red:#ff8b7e;--redbg:#3a1c1a;--glow:rgba(95,196,173,.13)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);min-height:100vh;
+background-image:radial-gradient(520px circle at var(--px,50%) var(--py,30%),var(--glow),transparent 70%);background-attachment:fixed}
+button,textarea{font:inherit;color:inherit}button{cursor:pointer}:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+header{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:16px;padding:10px 18px;flex-wrap:wrap}
+.brand b{font:700 22px var(--serif);letter-spacing:.02em}.brand span{color:var(--mute);margin-left:10px;font-size:13px}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-left:auto}
+.seg button{background:none;border:0;padding:6px 12px;border-right:1px solid var(--line)}.seg button:last-child{border:0}.seg button.on{background:var(--acc);color:#fff}
+.status{font-size:12.5px;color:var(--mute);margin-left:auto}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:6px}.dot.ok{background:#2e9e5b}
+.hero{max-width:1120px;margin:0 auto;padding:22px 18px 6px;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,440px);gap:24px;align-items:center}
+.hero h1{font:600 clamp(30px,5vw,46px)/1.1 var(--serif);margin:0 0 12px}.hero p{color:var(--mute);max-width:46ch;margin:0 0 18px;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{border:1px solid var(--line);background:var(--paper);border-radius:18px;padding:6px 12px;transition:border-color .15s,transform .15s}
+.chips button:hover{border-color:var(--acc);transform:translateY(-2px)}
+.art{width:100%;height:auto;display:block;touch-action:none;user-select:none}
+.art .arch{fill:var(--accbg);stroke:var(--line);stroke-width:2;opacity:.8}.art .gold{stroke:var(--gold);stroke-width:5;stroke-linecap:round;fill:none}
+.art .goldf{fill:var(--gold)}.art .thin{stroke:var(--gold);stroke-width:1.6;fill:none}.art .book{fill:var(--acc)}.art .pg{stroke:var(--paper);stroke-width:2;opacity:.8}
+.art .sym{font:700 34px var(--serif);fill:var(--acc);opacity:.45}.art .head{fill:var(--ink)}.art .handle{fill:var(--gold)}
+#gavel{cursor:pointer;transform-box:fill-box;transform-origin:85% 85%}#gavel.hit{animation:strike .45s ease}
+@keyframes strike{0%{transform:rotate(0)}35%{transform:rotate(-28deg)}60%{transform:rotate(6deg)}100%{transform:rotate(0)}}
+.wrap{max-width:1120px;margin:0 auto;padding:10px 18px 18px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start}
+#side{position:sticky;top:76px;max-height:calc(100vh - 170px);overflow:auto}
+.q{margin:22px 0 8px;font-weight:600;max-width:60ch}.q:before{content:"You asked";display:block;font-weight:400;font-size:12.5px;color:var(--mute)}
+.ans{font:17px/1.65 var(--serif);max-width:64ch;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.ans h3{font:700 14px var(--sans);margin:18px 0 4px;color:var(--acc)}.ans p{margin:6px 0}.ans ul{margin:4px 0 8px;padding-left:20px}.wait{color:var(--mute);font:14px var(--sans)}
+a.cite{font:600 12px var(--sans);text-decoration:none;color:var(--acc);background:var(--accbg);border-radius:4px;padding:1px 6px;white-space:nowrap}
+.note{font:14px/1.45 var(--sans);border-left:4px solid;padding:8px 12px;margin:10px 0;border-radius:0 6px 6px 0}.note.urgent{border-color:var(--red);background:var(--redbg)}.note.low{border-color:var(--warn);background:var(--warnbg)}
+.basis{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px;font:13.5px/1.5 var(--sans)}
+.basis h2{font:700 16px var(--serif);margin:0 0 8px}.basis h3{font-size:13px;margin:0 0 4px}
+.steps{padding-left:20px;margin:0}.steps li{margin-bottom:12px;padding-left:4px}.steps li::marker{font-weight:700;color:var(--acc)}
+.hit{display:flex;align-items:center;gap:8px;margin:3px 0;flex-wrap:wrap}.bar{height:4px;background:var(--accbg);flex:1;min-width:40px;border-radius:2px}.bar i{display:block;height:100%;background:var(--acc);border-radius:2px}
+.checks{color:var(--mute);margin:0;padding-left:16px}.basis details{border-top:1px solid var(--line);padding:6px 0}.basis summary{cursor:pointer;font-weight:600}
+.basis details p{margin:6px 0;color:var(--mute)}.basis small{color:var(--mute)}details.flash{background:var(--accbg)}.unv{font-size:11.5px;color:var(--warn);font-weight:600;margin-left:6px}
+#composer{position:sticky;bottom:0;background:var(--bg);padding:10px 18px 12px;border-top:1px solid var(--line)}
+.inner{max-width:1120px;margin:0 auto;display:flex;gap:10px}.inner textarea{flex:1;resize:none;border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--paper);min-height:46px;max-height:140px}
+.send{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:0 20px;font-weight:600}.send:disabled{opacity:.5}
+.fine{max-width:1120px;margin:6px auto 0;font-size:12px;color:var(--mute)}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.wrap{grid-template-columns:1fr}#side{display:none}.brand span{display:none}.ans .basis{margin-top:14px}}
+@media (prefers-reduced-motion:reduce){#gavel.hit{animation:none}}
+header{background:#0b1830;border-bottom:0}.brand b{color:#fff}.brand b:before{content:'⚖';color:#e0b04e;margin-right:8px}.brand span,.status{color:#aab6c8}
+.theme{background:none;border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:8px;width:34px;height:30px}
+body{overflow-x:hidden}
+.hero{background:radial-gradient(520px 260px at 82% 25%,rgba(224,176,78,.2),transparent 70%),#0b1830;box-shadow:0 0 0 100vmax #0b1830;clip-path:inset(0 -100vmax);padding:26px 18px 32px;margin-bottom:14px}
+.hero h1{color:#fff}.hero p{color:#b9c4d6}
+.art .arch{fill:rgba(255,255,255,.06);stroke:rgba(255,255,255,.22)}.art .head{fill:#e8ecf2}.art .sym{fill:#e0b04e}.art .book{fill:#18a58c}.art .pg{stroke:#fff}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.chips button{text-align:left;color:#fff;border:1px solid rgba(255,255,255,.16);background:radial-gradient(180px circle at var(--cx,50%) var(--cy,50%),rgba(224,176,78,.24),transparent 70%),rgba(255,255,255,.06);border-radius:12px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px}
+.chips button:hover{border-color:#e0b04e}.chips .ic{grid-row:span 2;font-size:26px;align-self:center}.chips small{color:#aab6c8;font-size:12.5px;line-height:1.35}
+.q{background:var(--accbg);border-radius:12px 12px 12px 2px;padding:10px 14px;width:fit-content;max-width:100%}
+.ans{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:16px 20px;box-shadow:0 6px 24px rgba(11,24,48,.08);margin-bottom:8px}
+.wait:after{content:'';display:inline-block;width:1.4em;text-align:left;animation:dots 1.2s steps(4) infinite}@keyframes dots{0%{content:''}25%{content:'.'}50%{content:'..'}75%{content:'...'}}
+.copy{margin-top:10px;background:none;border:1px solid var(--line);border-radius:16px;padding:3px 12px;font:12.5px var(--sans);color:var(--mute)}.copy:hover{border-color:var(--acc);color:var(--acc)}
+.inner textarea{border-radius:24px;padding:12px 18px;box-shadow:0 4px 18px rgba(11,24,48,.1)}.send{border-radius:24px;background:linear-gradient(135deg,#e0b04e,#b8872b);color:#1a1405}
+.chat .hero{grid-template-columns:1fr auto;padding:10px 18px}.chat .hero p,.chat .chips{display:none}.chat .hero h1{font-size:22px;margin:0}.chat .art{max-width:130px}
+@media (max-width:520px){.chips{grid-template-columns:1fr}}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+body{background-image:radial-gradient(520px circle at var(--px,50%) var(--py,30%),var(--glow),transparent 70%),radial-gradient(rgba(120,135,160,.24) 1px,transparent 1.3px);background-size:auto,28px 28px;background-attachment:fixed}
+header{background:rgba(11,24,48,.92);backdrop-filter:blur(8px)}
+.hero{background:radial-gradient(520px 260px at 82% 25%,rgba(224,176,78,.2),transparent 70%),rgba(11,24,48,.82);box-shadow:0 0 0 100vmax rgba(11,24,48,.82)}
+.wrap{position:relative;z-index:1}#composer{z-index:2;background:linear-gradient(transparent,var(--bg) 45%);border-top:0}
+.ans,.basis{background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px)}
+#legend{position:fixed;right:18px;bottom:96px;max-width:250px;z-index:3;font:12px/1.4 var(--sans);color:var(--mute);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 10px}#legend[hidden]{display:none}
+@media (max-width:900px){#legend{display:none}}
+</style></head><body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="legend" hidden>Background: ALA’s knowledge map. Gold nodes matched your question; teal nodes are linked topics.</div>
+<header>
+ <div class="brand"><b>ALA</b><span>Legal aid in plain language</span></div>
+ <div class="status" id="status"><span class="dot"></span>Preview mode: sample answers</div><button class="theme" id="theme" type="button" aria-label="Switch light or dark theme">◐</button>
+</header>
+<section class="hero">
+ <div><h1>Tell me what happened.</h1><p>Describe your situation in plain words. I’ll point to the laws that may apply, your rights, safe next steps, and the evidence worth keeping.</p>
+ <div class="chips" id="chips"></div></div>
+ <svg class="art" id="art" viewBox="0 0 420 380" role="img" aria-label="Scales of justice in front of a courthouse, with a law book and gavel">
+  <g class="ly" data-d="5"><path class="arch" d="M60 124 L210 40 L360 124 Z"/><rect class="arch" x="56" y="124" width="308" height="14"/>
+   <rect class="arch" x="78" y="138" width="34" height="146"/><rect class="arch" x="146" y="138" width="34" height="146"/><rect class="arch" x="240" y="138" width="34" height="146"/><rect class="arch" x="308" y="138" width="34" height="146"/>
+   <rect class="arch" x="46" y="284" width="328" height="10"/><rect class="arch" x="34" y="294" width="352" height="10"/></g>
+  <g class="ly" data-d="34"><text class="sym" x="22" y="90">§</text><text class="sym" x="364" y="64">¶</text><text class="sym" x="338" y="196" style="font-size:24px">§</text></g>
+  <g class="ly" data-d="12"><rect class="goldf" x="207" y="76" width="6" height="204"/><path class="goldf" d="M168 292 Q210 258 252 292 Z"/><circle class="goldf" cx="210" cy="72" r="8"/>
+   <g id="beam"><line class="gold" x1="96" y1="92" x2="324" y2="92"/><circle class="goldf" cx="96" cy="92" r="6"/><circle class="goldf" cx="324" cy="92" r="6"/>
+    <g id="panL"><path class="thin" d="M96 92 L58 178 M96 92 L134 178"/><path class="goldf" d="M54 178 Q96 214 138 178 Z"/></g>
+    <g id="panR"><path class="thin" d="M324 92 L286 178 M324 92 L362 178"/><path class="goldf" d="M282 178 Q324 214 366 178 Z"/></g></g></g>
+  <g class="ly" data-d="26"><g><rect class="book" x="26" y="306" width="132" height="30" rx="4"/><path class="pg" d="M36 314 H148 M36 322 H148 M36 330 H130"/></g>
+   <g id="gavel" tabindex="0" role="button" aria-label="Strike the gavel"><rect class="handle" x="296" y="318" width="86" height="12" rx="6" transform="rotate(-24 340 324)"/><rect class="head" x="296" y="286" width="46" height="26" rx="5" transform="rotate(-24 319 299)"/></g></g>
+ </svg>
+</section>
+<div class="wrap"><main id="feed"></main><aside id="side"></aside></div>
+<form id="composer"><div class="inner"><textarea id="box" rows="1" placeholder="Tell me what happened, in your own words" aria-label="Your situation"></textarea><button class="send" id="send">Ask</button></div>
+<div class="fine">General information, not legal advice. Sample law text here is an unverified summary: check any section against the official Act.</div></form>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let mode="hybrid",history=[],busy=false,known=new Set(),live=null;
+/* ---- mouse-reactive illustration ---- */
+const art=$("#art"),lys=[...art.querySelectorAll(".ly")],beam=$("#beam"),pl=$("#panL"),pr=$("#panR");
+let tx=0,ty=0,cx=0,cy=0,last=0,reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+addEventListener("pointermove",e=>{last=performance.now();document.body.style.setProperty("--px",e.clientX+"px");document.body.style.setProperty("--py",e.clientY+"px");
+ const r=art.getBoundingClientRect();tx=Math.max(-1,Math.min(1,(e.clientX-(r.left+r.width/2))/(innerWidth/2)));ty=Math.max(-1,Math.min(1,(e.clientY-(r.top+r.height/2))/(innerHeight/2)))});
+function frame(t){if(!reduce){if(t-last>2500){tx=Math.sin(t/1700)*.55;ty=Math.cos(t/2300)*.2}
+ cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;
+ lys.forEach(g=>{const d=+g.dataset.d;g.setAttribute("transform",`translate(${(-cx*d).toFixed(2)} ${(-cy*d*.6).toFixed(2)})`)});
+ const a=cx*9;beam.setAttribute("transform",`rotate(${a.toFixed(2)} 210 92)`);
+ pl.setAttribute("transform",`rotate(${(-a).toFixed(2)} 96 92)`);pr.setAttribute("transform",`rotate(${(-a).toFixed(2)} 324 92)`)}
+ requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+const gv=$("#gavel"),strike=()=>{gv.classList.remove("hit");void gv.getBoundingClientRect();gv.classList.add("hit")};
+gv.addEventListener("click",strike);gv.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();strike()}});
+/* ---- sample data (used when no local ALA server is reachable) ---- */
+const D={
+wages_gratuity:["Unpaid salary and gratuity","Payment of Gratuity Act 1972 s.4; wage laws / labour codes","Gratuity is payable on leaving after five years of continuous service, generally at 15 days’ wages per year (s.4). Unpaid wages can be raised with your State’s labour authority."],
+termination:["Termination from job","Industrial Disputes Act 1947 / Industrial Relations Code 2020","Protection depends on your role, length of service and State. Check your appointment letter for the notice period and ask for the reason in writing."],
+legal_notice:["Receiving or sending a legal notice","General practice; CPC s.80","A legal notice is a demand letter, not a court order, but ignoring it can lead to a case. Reply in writing before the deadline, ideally through a lawyer."],
+legal_aid:["Free legal aid","Constitution Art. 39A; Legal Services Authorities Act 1987 s.12","If you cannot afford a lawyer, apply at your District Legal Services Authority. Persons in custody, women and children are among those eligible."],
+arrest_rights:["Rights on arrest or police summons","Constitution Art. 20(3), 22; BNSS 2023 s.47, 58","You must be told the grounds of arrest and can consult a lawyer. You must be produced before a Magistrate within 24 hours, and cannot be forced to testify against yourself."],
+fir_registration:["How to file an FIR","BNSS 2023 s.173 (old CrPC s.154)","A police station should register an FIR for a cognizable offence and give you a free copy. If it refuses, write to the Superintendent of Police."],
+bail_basics:["Bail basics","BNSS 2023 s.478, 480, 482","Bail is a right for bailable offences; for non-bailable ones it is at the court’s discretion. Anticipatory bail can be sought before arrest."],
+evidence_preservation:["Preserving evidence","BSA 2023 s.63 (old Evidence Act s.65B)","Never delete or alter messages or documents. Back up chats and emails; electronic records usually need a certificate to be admitted."],
+tenant_notice:["Landlord and tenant problems","Transfer of Property Act s.106; State Rent Control Acts","A landlord cannot evict you by force. Deposit return is governed mainly by your rent agreement: send a written demand, then a legal notice."],
+contract_breach:["Breach of contract / money owed","Indian Contract Act 1872 s.73, 74","The party harmed by a breach can claim compensation for loss naturally caused by it. Money suits are generally subject to a three-year limit."],
+cheque_bounce:['Cheque bounce (dishonour)','Negotiable Instruments Act 1881 s.138, 142','Send a written demand within 30 days of learning of the bounce. The drawer then has 15 days to pay; if not, file a complaint with the Magistrate within one month.'],
+consumer_complaint:['Consumer complaint','Consumer Protection Act 2019 s.35, 69','You can file a complaint, even online, with the District Consumer Commission. The time limit is two years from the cause of action.'],
+rti:['Right to Information','RTI Act 2005 s.6, 7, 19','A reply is due within 30 days. If you hear nothing, make a first appeal to the senior officer within 30 days.']};
+const doc=(id,s)=>({id,title:D[id][0],source:D[id][1],body:D[id][2],...(s?{score:s}:{})});
+const SC=[
+{re:/salary|wage|employer|unpaid|gratuity|job/i,conf:"HIGH",urgent:false,m:[["wages_gratuity",6.4],["termination",4.2]],l:["legal_aid","legal_notice","contract_breach"],
+ a:"**What happened**\nYour employer has not paid your salary for several months.\n**What you can do**\n- Send a written demand listing the months and amounts due, by email and traceable post. [wages_gratuity]\n- If it stays unpaid, raise it with your State labour authority. [wages_gratuity]\n- If you were also removed from the job, ask for the reason in writing. [termination]\n**Evidence to keep**\n- Appointment letter, salary slips, bank statements, and any chats about the dues. [evidence_preservation]\n**Also worth knowing**\n- Free help is available if cost is a problem. [legal_aid]\n**When to get a lawyer**\nIf the demand is ignored for 15 days, or the dues are large, speak to a lawyer."},
+{re:/arrest|police|detain|custody|bail|fir/i,conf:"HIGH",urgent:true,m:[["arrest_rights",5],["fir_registration",3.6]],l:["legal_aid","bail_basics","evidence_preservation"],
+ a:"**What happened**\nYour brother has been arrested.\n**Your rights**\n- He must be told why he was arrested and can speak to a lawyer. [arrest_rights]\n- He must be taken before a Magistrate within 24 hours. [arrest_rights]\n- He does not have to make statements that incriminate him. [arrest_rights]\n**What you can do now**\n- Get a lawyer today; if you cannot afford one, contact the District Legal Services Authority. [legal_aid]\n- Ask whether the offence is bailable. [bail_basics]\n**Avoid**\n- Do not sign anything you have not read.\n**When to get a lawyer**\nImmediately."},
+{re:/landlord|deposit|tenant|rent|evict/i,conf:"HIGH",urgent:false,m:[["tenant_notice",7.2],["contract_breach",2.4]],l:["legal_notice","evidence_preservation","legal_aid"],
+ a:"**What happened**\nYour landlord is not returning your security deposit.\n**What you can do**\n- Check what your rent agreement says about deposit return. [tenant_notice]\n- Send a written demand with a deadline, then a legal notice if ignored. [legal_notice]\n- A civil case for money owed is the next step. [contract_breach]\n**Evidence to keep**\n- Rent agreement, deposit payment proof, handover photos and chats. [evidence_preservation]\n**When to get a lawyer**\nIf the deposit is large or the notice is ignored."},
+{re:/cheque|bounce|dishonou?r/i,conf:'HIGH',urgent:false,m:[['cheque_bounce',6.1],['legal_notice',3]],l:['contract_breach','evidence_preservation','legal_aid'],
+ a:`**What happened**
+A cheque you received has bounced.
+**What you can do**
+- Send a written demand notice within 30 days of learning about the bounce. [cheque_bounce]
+- The drawer then has 15 days to pay. [cheque_bounce]
+- If it is still unpaid, file a complaint with the Magistrate within one month. [cheque_bounce]
+**Evidence to keep**
+- The cheque, the bank’s return memo, your notice and postal receipts. [evidence_preservation]
+**When to get a lawyer**
+Before sending the notice, because the time limits are strict.`},
+{re:/shop|defective|refund|product|warranty/i,conf:'HIGH',urgent:false,m:[['consumer_complaint',5.5]],l:['legal_notice','contract_breach','evidence_preservation'],
+ a:`**What happened**
+You bought a phone that turned out to be defective.
+**What you can do**
+- Complain to the seller in writing and ask for a refund or replacement. [consumer_complaint]
+- If ignored, send a legal notice. [legal_notice]
+- You can then file a complaint with the District Consumer Commission, within two years. [consumer_complaint]
+**Evidence to keep**
+- Invoice, payment proof, warranty card, photos and chats with the seller. [evidence_preservation]
+**When to get a lawyer**
+It is optional for small claims; helpful if the amount is large.`},
+{re:/rti|information|reply/i,conf:'HIGH',urgent:false,m:[['rti',6]],l:['legal_notice','evidence_preservation'],
+ a:`**What happened**
+Your RTI application has had no reply.
+**What you can do**
+- A reply is due within 30 days of your application. [rti]
+- Make a first appeal to the senior officer within 30 days of the deadline. [rti]
+- If that fails, appeal to the Information Commission.
+**Evidence to keep**
+- Your application, fee receipt and postal proof. [evidence_preservation]
+**When to get a lawyer**
+Usually not needed for RTI appeals.`}];
+const EX=[['💼','Work & salary','My employer hasn’t paid my salary for 3 months'],['🏠','Rent & property','My landlord won’t return my deposit'],['🚔','Police & arrest','Police arrested my brother'],['💳','Money & cheques','A friend’s cheque bounced'],['🛒','Consumer issues','The shop sold me a defective phone'],['🏛️','Government & RTI','My RTI application got no reply']];
+$("#chips").innerHTML=EX.map(([i,t,q])=>`<button type="button" data-q="${esc(q)}"><span class="ic">${i}</span><b>${esc(t)}</b><small>${esc(q)}</small></button>`).join('');document.querySelectorAll('.chips button').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--cx',e.clientX-r.left+'px');c.style.setProperty('--cy',e.clientY-r.top+'px')}));
+async function* demo(q){const s=SC.find(x=>x.re.test(q));
+ if(!s){yield{type:"meta",mode,confidence:"LOW",urgent:false,matched:[],linked:[]};yield{type:"nomatch"};return}
+ yield{type:"meta",mode,confidence:s.conf,urgent:s.urgent,matched:s.m.map(([i,sc])=>doc(i,sc)),linked:mode==="rag"?[]:s.l.map(i=>doc(i))};
+ for(const w of s.a.split(/(\s+)/)){yield{type:"token",t:w};if(w.trim())await new Promise(r=>setTimeout(r,16))}
+ yield{type:"done"}}
+async function* real(q){const res=await fetch("/api/ask",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:q,mode,history})});
+ if(!res.ok||!(res.headers.get("content-type")||"").includes("ndjson"))throw 0;
+ const rd=res.body.getReader(),dec=new TextDecoder();let buf="";
+ while(true){const{done,value}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let i;
+  while((i=buf.indexOf("\n"))>=0){const l=buf.slice(0,i);buf=buf.slice(i+1);if(l.trim())yield JSON.parse(l)}}}
+async function* source(q){if(live!==false){try{const g=real(q);const f=await g.next();live=true;$('#status').innerHTML='<span class="dot ok"></span>Connected to your local ALA';yield f.value;yield*g;return}catch(e){if(live===true)throw e;live=false}}
+ $("#status").innerHTML='<span class="dot"></span>Preview mode: sample answers';yield*demo(q)}
+/* ---- UI ---- */
+function md(src){const lines=esc(src).split("\n");let out="",ul=false;const close=()=>{if(ul){out+="</ul>";ul=false}};
+ const inl=s=>s.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\[([a-z_]+)\]/g,(m,id)=>known.has(id)?`<a href="#" class="cite" data-id="${id}">${id.replace(/_/g," ")}</a>`:m);
+ for(const l of lines){let m;
+  if(m=l.match(/^\s*[-*]\s+(.*)/)){if(!ul){out+="<ul>";ul=true}out+=`<li>${inl(m[1])}</li>`}
+  else if(!l.trim())close();
+  else{close();const t=l.trim();out+=/^\*\*[^*]+\*\*$/.test(t)?`<h3>${inl(t)}</h3>`.replace(/<\/?strong>/g,""):`<p>${inl(l)}</p>`}}
+ close();return out}
+function basis(o){const hit=d=>`<div class="hit"><a href="#" class="cite" data-id="${d.id}">${esc(d.title)}</a>${d.score!=null?`<span class="bar"><i style="width:${Math.min(100,d.score/8*100)}%"></i></span>`:""}</div>`;
+ let li=`<li><h3>${o.mode==="okf"?"Matched by topic":"Matched by keywords"}</h3>${o.matched.map(hit).join("")}</li>`;
+ if(o.mode!=="rag")li+=`<li><h3>Linked by curated connections</h3>${o.linked.map(hit).join("")||"<small>No linked topics</small>"}</li>`;
+ li+=`<li><h3>Checks</h3><ul class="checks"><li>Match confidence: ${o.confidence.toLowerCase()}</li>${o.urgent?"<li>Urgent: arrest or police involved, lawyer advised now</li>":""}<li>Law text is unverified: check the official Act</li></ul></li>`;
+ return `<div class="basis" id="basis"><h2>Basis for this answer</h2><ol class="steps">${li}</ol><h3>Sources</h3>`+[...o.matched,...o.linked].map(d=>`<details id="src-${d.id}"><summary>${esc(d.title)}<span class="unv">unverified</span></summary><small>${esc(d.source)}</small><p>${esc(d.body)}</p></details>`).join("")+"</div>"}
+function place(el){const o=$("#basis");if(o)o.remove();$("#side").innerHTML="";
+ (matchMedia("(max-width:900px)").matches?$("#feed").lastElementChild:$("#side")).appendChild(el)}
+function openSrc(id){const d=document.getElementById("src-"+id);if(!d)return;d.open=true;d.scrollIntoView({block:"nearest",behavior:"smooth"});d.classList.add("flash");setTimeout(()=>d.classList.remove("flash"),1200)}
+document.addEventListener("click",e=>{const c=e.target.closest(".chips button");if(c)return ask(c.dataset.q);const cp=e.target.closest('.copy');if(cp){const t=cp.parentElement.innerText.replace(/Copy answer|Copied/,'').trim();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>cp.textContent='Copied').catch(()=>cp.textContent='Select the text to copy');return}
+ const k=e.target.closest("a.cite");if(k){e.preventDefault();openSrc(k.dataset.id)}
+ const m=e.target.closest(".seg button");if(m){mode=m.dataset.m;document.querySelectorAll(".seg button").forEach(b=>b.classList.toggle("on",b===m))}});
+async function ask(q){q=(q||"").trim();if(!q||busy)return;busy=true;document.body.classList.add('chat');$("#send").disabled=true;$("#box").value="";
+ const f=$("#feed"),qe=document.createElement("div");qe.className="q";qe.textContent=q;f.appendChild(qe);
+ const a=document.createElement("article");a.className="ans";a.innerHTML='<div class="wait">Finding the relevant law…</div>';f.appendChild(a);qe.scrollIntoView({behavior:"smooth",block:"start"});
+ let text="",body=null,meta=null;known=new Set();
+ try{for await(const o of source(q)){
+  if(o.type==="meta"){meta=o;[...o.matched,...o.linked].forEach(d=>known.add(d.id));setGraph(o.matched.map(d=>d.id),o.linked.map(d=>d.id),true);a.innerHTML="";
+   if(o.urgent)a.insertAdjacentHTML("beforeend",'<div class="note urgent"><b>Contact a lawyer now.</b> Arrest or police involvement is time-sensitive. Do not sign anything you have not read. Free help: your District Legal Services Authority.</div>');
+   if(o.confidence==="LOW"&&o.matched.length)a.insertAdjacentHTML("beforeend",'<div class="note low">This match may be imperfect. Add more detail if the answer seems off.</div>');
+   body=document.createElement("div");a.appendChild(body);body.innerHTML='<div class="wait">Writing the answer…</div>';
+   if(o.matched.length)place(document.createRange().createContextualFragment(basis(o)).firstElementChild)}
+  else if(o.type==="token"){text+=o.t;body.innerHTML=md(text)}
+  else if(o.type==="nomatch")body.innerHTML="<p>I found nothing in my small law dataset for that. Try words like salary, landlord, arrest or cheque, or speak to a lawyer.</p>";
+  else if(o.type==="offline")body.innerHTML="<p><i>The local model is not running, so here is the matching law text.</i></p>"+meta.matched.concat(meta.linked).map(d=>`<h3>${esc(d.title)}</h3><p>${esc(d.body)}</p>`).join("");
+  else if(o.type==="error")body.innerHTML=`<div class="note low">${esc(o.message)}</div>`;
+  else if(o.type==="done"){a.insertAdjacentHTML('beforeend','<button class="copy" type="button">Copy answer</button>');history.push({role:"user",content:q},{role:"assistant",content:text});history=history.slice(-6)}}
+ }catch(e){a.innerHTML='<div class="note low">Could not reach the ALA server.</div>'}
+ busy=false;$("#send").disabled=false}
+/* ---- living knowledge-map background ---- */
+const GN={fir_registration:['📝','FIR',['arrest_rights','legal_aid','evidence_preservation']],arrest_rights:['🚔','Arrest rights',['legal_aid','bail_basics']],legal_aid:['🤝','Legal aid',[]],bail_basics:['🔓','Bail',['arrest_rights','legal_aid']],cheque_bounce:['💳','Cheque bounce',['legal_notice','contract_breach']],legal_notice:['✉️','Legal notice',['evidence_preservation','contract_breach']],consumer_complaint:['🛒','Consumer',['legal_notice','contract_breach']],contract_breach:['📜','Contract',['legal_notice','cheque_bounce']],wages_gratuity:['💼','Wages',['termination','legal_aid']],termination:['🚪','Termination',['wages_gratuity','legal_aid']],posh:['🛡️','Workplace safety',['fir_registration','legal_aid']],tenant_notice:['🏠','Tenancy',['contract_breach','legal_notice']],rti:['🔎','RTI',[]],constitution_remedies:['🏛️','Constitution',['legal_aid']],evidence_preservation:['🗂️','Evidence',[]]};
+const gids=Object.keys(GN),cv=$('#bg'),g2=cv.getContext('2d');
+let GW=0,GH=0,mx=-999,my=-999,act={},actList=[],hasAct=false,sticky=null,pal={};
+const N=gids.map((id,i)=>({id,ic:GN[id][0],lb:GN[id][1],hx:0,hy:0,x:0,y:0,vx:0,vy:0,glow:0,ph:i*1.7})),byId=Object.fromEntries(N.map(n=>[n.id,n]));
+const E=[];gids.forEach(a=>GN[a][2].forEach(b=>{if(byId[b]&&!E.some(e=>(e[0]===a&&e[1]===b)||(e[0]===b&&e[1]===a)))E.push([a,b])}));
+function gsize(){const d=devicePixelRatio||1;GW=innerWidth;GH=innerHeight;cv.width=GW*d;cv.height=GH*d;g2.setTransform(d,0,0,d,0,0);
+ N.forEach((n,i)=>{const r=Math.sqrt((i+.5)/N.length),a=i*2.399963;n.hx=GW/2+Math.cos(a)*r*GW*.46;n.hy=GH/2+Math.sin(a)*r*GH*.44;if(!n.x){n.x=n.hx;n.y=n.hy}})}
+addEventListener('resize',gsize);gsize();addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY});
+function setGraph(m,l,keep){const a={};(l||[]).forEach(i=>a[i]=2);(m||[]).forEach(i=>a[i]=1);act=a;actList=Object.keys(a).filter(k=>byId[k]);hasAct=actList.length>0;if(keep){sticky={m,l};$('#legend').hidden=false}}
+const CN=['wages_gratuity','tenant_notice','arrest_rights','cheque_bounce','consumer_complaint','rti'];
+document.querySelectorAll('.chips button').forEach((c,i)=>{const on=()=>setGraph([CN[i]],GN[CN[i]][2]),off=()=>sticky?setGraph(sticky.m,sticky.l):setGraph([],[]);c.addEventListener('pointerenter',on);c.addEventListener('focus',on);c.addEventListener('pointerleave',off);c.addEventListener('blur',off)});
+function readPal(){const s=getComputedStyle(document.documentElement),v=k=>s.getPropertyValue(k).trim();pal={ink:v('--ink'),line:v('--line'),paper:v('--paper'),acc:v('--acc'),gold:v('--gold')}}
+function gstep(t){requestAnimationFrame(gstep);if(!pal.ink||Math.floor(t)%120<17)readPal();g2.clearRect(0,0,GW,GH);
+ N.forEach(n=>{const k=actList.indexOf(n.id);n.glow+=((act[n.id]?1:0)-n.glow)*.08;if(reduce)return;
+  let tx=n.hx+Math.sin(t/2200+n.ph)*18,ty=n.hy+Math.cos(t/2600+n.ph)*18,sp=.004;
+  if(k>=0){const a=k/actList.length*6.2832+t/9000;tx=GW/2+Math.cos(a)*Math.min(GW,560)*.3;ty=GH*.56+Math.sin(a)*Math.min(GH,520)*.26;sp=.006}
+  let ax=(tx-n.x)*sp,ay=(ty-n.y)*sp;const dx=n.x-mx,dy=n.y-my,d2=dx*dx+dy*dy;if(d2<19600&&d2>1){const d=Math.sqrt(d2),f=(140-d)/140*.9;ax+=dx/d*f;ay+=dy/d*f}
+  n.vx=(n.vx+ax)*.9;n.vy=(n.vy+ay)*.9;n.x+=n.vx;n.y+=n.vy});
+ g2.lineCap='round';
+ E.forEach(([a,b],i)=>{const A=byId[a],B=byId[b],on=act[a]&&act[b];g2.globalAlpha=on?.95:(hasAct?.18:.4);g2.strokeStyle=on?pal.gold:pal.line;g2.lineWidth=on?2.2:1;g2.beginPath();g2.moveTo(A.x,A.y);g2.lineTo(B.x,B.y);g2.stroke();
+  if(on){const p=(t/1400+i*.31)%1;g2.globalAlpha=1;g2.fillStyle=pal.acc;g2.beginPath();g2.arc(A.x+(B.x-A.x)*p,A.y+(B.y-A.y)*p,3.5,0,6.2832);g2.fill()}});
+ g2.textAlign='center';g2.textBaseline='middle';
+ N.forEach(n=>{const a=act[n.id],r=20*(1+.35*n.glow),near=Math.hypot(n.x-mx,n.y-my)<90;g2.globalAlpha=hasAct&&!a?.35:.9;
+  if(n.glow>.05){g2.globalAlpha=.28*n.glow;g2.fillStyle=a===1?pal.gold:pal.acc;g2.beginPath();g2.arc(n.x,n.y,r+14,0,6.2832);g2.fill();g2.globalAlpha=hasAct&&!a?.35:.9}
+  g2.fillStyle=pal.paper;g2.strokeStyle=a===1?pal.gold:a===2?pal.acc:pal.line;g2.lineWidth=a?2.5:1.2;g2.beginPath();g2.arc(n.x,n.y,r,0,6.2832);g2.fill();g2.stroke();
+  g2.font=Math.round(18*(1+.3*n.glow))+'px sans-serif';g2.fillStyle=pal.ink;g2.fillText(n.ic,n.x,n.y+1);
+  if(n.glow>.2||near){g2.globalAlpha=.95;g2.font='600 11px system-ui,sans-serif';g2.fillText(n.lb,n.x,n.y+r+12)}});
+ g2.globalAlpha=1}
+requestAnimationFrame(gstep);
+$('#theme').onclick=()=>{const d=document.documentElement;const dark=(d.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'))==='dark';d.dataset.theme=dark?'light':'dark'};
+fetch('/api/health').then(r=>r.json()).then(h=>{$('#status').innerHTML='<span class="dot '+(h.ollama?'ok':'')+'"></span>'+(h.ollama?'Local model ready ('+esc(h.model)+')':'Ollama not running: showing law text only')}).catch(()=>{});
+$("#composer").addEventListener("submit",e=>{e.preventDefault();ask($("#box").value)});
+$("#box").addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();ask($("#box").value)}});
+</script></body></html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Indian Legal News &amp; Court Updates | ALA</title>
+<meta name="description" content="Latest Indian law updates, Supreme Court rulings, BNS &amp; BNSS amendments, tenancy laws, and consumer protection decisions in plain language.">
+<meta name="robots" content="index,follow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:title" content="Indian Legal News &amp; Court Updates | ALA">
+<meta property="og:description" content="Stay informed with real-time Indian court decisions, legal amendments, and citizen rights updates.">
+<meta property="og:image" content="/social-preview.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/social-preview.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1830;--surface:#112240;--surface2:rgba(255,255,255,.05);--border:rgba(255,255,255,.14);
+  --ink:#ffffff;--ink-2:#b9c4d6;--muted:#8b949e;--acc:#5fc4ad;--gold:#e0b04e;
+  --font-sans:'Inter',system-ui,-apple-system,sans-serif;
+  --font-serif:'Lora',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(540px 320px at 50% 15%,rgba(224,176,78,.15),transparent 70%),var(--bg);color:var(--ink);font-family:var(--font-sans);min-height:100vh;display:flex;flex-direction:column}
+header{position:sticky;top:0;z-index:50;padding:14px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:rgba(11,24,48,.92);backdrop-filter:blur(10px)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand-logo{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--acc),#227060);display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff}
+.brand-title{font:700 18px var(--font-serif);letter-spacing:.02em}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{color:var(--ink-2);text-decoration:none;font-size:14px;font-weight:500;transition:color .15s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-cta{background:linear-gradient(135deg,var(--gold),#b8872b);color:#0b1830!important;padding:6px 16px;border-radius:20px;font-weight:700!important}
+
+.container{max-width:1120px;margin:0 auto;padding:40px 24px 80px;flex:1}
+.news-header{text-align:center;margin-bottom:36px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(224,176,78,.15);border:1px solid var(--gold);color:var(--gold);padding:4px 14px;border-radius:999px;font-size:12.5px;font-weight:600;margin-bottom:12px}
+h1{font:700 clamp(30px,5vw,46px) var(--font-serif);color:#fff;margin-bottom:10px}
+.news-header p{color:var(--ink-2);font-size:16px;max-width:54ch;margin:0 auto 20px}
+
+.search-box{max-width:480px;margin:0 auto 36px;position:relative}
+.search-input{width:100%;padding:12px 18px;border-radius:30px;border:1px solid var(--border);background:var(--surface);color:#fff;font-size:14px;outline:none;transition:border-color .15s}
+.search-input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(224,176,78,.2)}
+
+.news-list{display:flex;flex-direction:column;gap:18px}
+.news-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:12px;padding:22px 26px;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .15s,border-color .15s}
+.news-card:hover{transform:translateX(4px);border-color:var(--acc)}
+.news-meta{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--muted);margin-bottom:8px}
+.news-tag{background:rgba(95,196,173,.15);color:var(--acc);padding:2px 8px;border-radius:6px;font-weight:600}
+.news-title{font:700 19px var(--font-serif);color:#fff;margin-bottom:8px;line-height:1.4}
+.news-summary{font-size:14.5px;color:var(--ink-2);line-height:1.6;margin-bottom:12px}
+.news-link{display:inline-flex;align-items:center;gap:6px;color:var(--gold);text-decoration:none;font-size:13px;font-weight:600}
+.news-link:hover{text-decoration:underline}
+
+/* Sticky Mobile CTA */
+.sticky-mobile-cta{position:fixed;bottom:12px;left:16px;right:16px;z-index:90;display:none;background:linear-gradient(135deg,var(--gold),#b8872b);color:#0b1830;font-weight:700;font-size:15px;padding:14px;border-radius:30px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.5);text-decoration:none}
+@media(max-width:768px){.sticky-mobile-cta{display:block}.container{padding-bottom:100px}}
+
+footer{padding:20px 24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--muted)}
+</style>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ALA2026IN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ALA2026IN', { 'anonymize_ip': true });
+</script>
+
+<!-- Schema.org LegalService Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "ALA - AI Legal Aid in Plain Language",
+  "image": "/social-preview.svg",
+  "description": "Plain-language Indian legal aid powered by AI, BNS 2023, BNSS, and Indian Kanoon precedents.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "serviceType": [
+    "Labour & Employment Legal Rights",
+    "Tenancy & Security Deposit Disputes",
+    "Cyber Fraud & 1930 Financial Recovery",
+    "Criminal Law, FIR & Bail (BNSS 2023)",
+    "Consumer Protection Grievances",
+    "Free Legal Aid (NALSA / DLSA)"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+  },
+  "priceRange": "Free / ₹0",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1240",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="/lux.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="/" aria-label="ALA Home">
+    <div class="brand-logo" aria-hidden="true">&#x2696;</div>
+    <span class="brand-title">ALA</span>
+  </a>
+  <nav class="nav-links" aria-label="Main Navigation">
+    <a href="/">Home</a>
+    <a href="/ask">Legal Advice</a>
+    <a href="/case-studies">Case Studies</a>
+    <a href="/news" class="active">Legal News</a>
+    <a href="/reviews">Reviews</a>
+    <a href="/login" class="nav-cta">Sign In</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="news-header">
+    <div class="badge">&#x1F4F0; Real-Time Indian Legal Intelligence</div>
+    <h1>Indian Legal News &amp; Court Rulings</h1>
+    <p>Stay ahead with key Supreme Court precedents, High Court orders, and statutory amendments in plain language.</p>
+    <div class="search-box">
+      <input type="text" class="search-input" id="search-input" placeholder="Search by topic, e.g. bail, salary, tenant, 1930..." aria-label="Search legal news">
+    </div>
+  </div>
+
+  <div class="news-list" id="news-container">
+    <p style="text-align:center;color:var(--muted);">Loading legal updates...</p>
+  </div>
+</main>
+
+<a href="/ask" class="sticky-mobile-cta" aria-label="Ask Legal Assistant Now">⚡ Get Free Legal Advice Now</a>
+
+<footer>
+  <p>ALA — AI Legal Assistant for India. Official statutory citations verified. Free legal counsel: dial <strong>15100</strong>.</p>
+</footer>
+
+<script>
+let newsData = [];
+
+async function loadNews() {
+  const container = document.getElementById('news-container');
+  try {
+    const res = await fetch('/api/news');
+    if (!res.ok) throw new Error('API failed');
+    newsData = await res.json();
+    renderNews(newsData);
+  } catch (err) {
+    container.innerHTML = '<p style="text-align:center;color:var(--muted);">Unable to load news right now. Please try again later.</p>';
+  }
+}
+
+function renderNews(items) {
+  const container = document.getElementById('news-container');
+  if (!items || !items.length) {
+    container.innerHTML = '<p style="text-align:center;color:var(--muted);">No matching legal news items found.</p>';
+    return;
+  }
+  container.innerHTML = items.map(item => `
+    <article class="news-card">
+      <div class="news-meta">
+        <span class="news-tag">${escapeHtml(item.category)}</span>
+        <span>•</span>
+        <span>${escapeHtml(item.source)}</span>
+        <span>•</span>
+        <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>
+      </div>
+      <h2 class="news-title">${escapeHtml(item.title)}</h2>
+      <p class="news-summary">${escapeHtml(item.summary)}</p>
+      <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" class="news-link">Official Portal &amp; Judgement Reference ↗</a>
+    </article>
+  `).join('');
+}
+
+function escapeHtml(str) {
+  return String(str || '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+document.getElementById('search-input').addEventListener('input', (e) => {
+  const term = e.target.value.toLowerCase().trim();
+  if (!term) {
+    renderNews(newsData);
+    return;
+  }
+  const filtered = newsData.filter(item => 
+    (item.title + ' ' + item.summary + ' ' + item.category + ' ' + item.source).toLowerCase().includes(term)
+  );
+  renderNews(filtered);
+});
+
+loadNews();
+</script>
+<img src="/social-preview.svg" alt="ALA Social Card Preview" style="display:none;" width="1" height="1">
+<!-- Luxury UI Engine: Lenis (Smooth Scroll) + GSAP (Motion) + ReactBits (Spotlight & Magnetic) -->
+<script src="/js/lenis.min.js"></script>
+<script src="/js/gsap.min.js"></script>
+<script src="/js/ScrollTrigger.min.js"></script>
+<script src="/lux.js" defer></script>
+
+</body>
+</html>

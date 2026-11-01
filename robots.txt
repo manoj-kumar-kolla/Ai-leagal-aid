@@ -1,0 +1,14 @@
+# robots.txt for Ala (AI Legal Assistant India)
+User-agent: *
+Allow: /
+Allow: /ask
+Allow: /case-studies
+Allow: /news
+Allow: /reviews
+Allow: /login
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: http://localhost:8000/sitemap.xml

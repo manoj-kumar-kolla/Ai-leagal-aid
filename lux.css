@@ -1,0 +1,273 @@
+/* ==========================================================================
+   ALA LUXURY UI DESIGN SYSTEM (GSAP + Lenis + ReactBits Inspiration)
+   Palette: Obsidian Navy (#070d18), Deep Indigo (#0b1424), Royal Gold (#e0b04e),
+            Crystalline Teal (#5fc4ad), Translucent Glass Hairlines.
+   ========================================================================== */
+
+/* 1. Lenis Smooth Scroll Core */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* 2. Global Luxury Atmospheric Aurora Backdrop */
+body {
+  background-color: #070d18 !important;
+  color: #e8ecf2 !important;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -15%;
+  left: -15%;
+  width: 130vw;
+  height: 130vh;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(14, 107, 92, 0.16) 0%, transparent 42%),
+    radial-gradient(circle at 82% 16%, rgba(224, 176, 78, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 50% 75%, rgba(95, 196, 173, 0.09) 0%, transparent 50%),
+    radial-gradient(circle at 75% 85%, rgba(184, 135, 43, 0.08) 0%, transparent 45%);
+  filter: blur(85px);
+  z-index: -2;
+  pointer-events: none;
+  animation: auroraFloat 22s ease-in-out infinite alternate;
+}
+
+@keyframes auroraFloat {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.06) translate(-2.5%, 3%); }
+  100% { transform: scale(0.97) translate(3%, -2%); }
+}
+
+/* Subtle Constitutional Grid Texture Overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* 3. ReactBits Shiny Text Component */
+.shiny-text {
+  background: linear-gradient(120deg, #e8ecf2 0%, #e0b04e 25%, #ffffff 50%, #5fc4ad 75%, #e8ecf2 100%);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shinySweep 7s linear infinite;
+  display: inline-block;
+  font-weight: 700;
+}
+
+@keyframes shinySweep {
+  0% { background-position: 250% 0; }
+  100% { background-position: -250% 0; }
+}
+
+/* 4. ReactBits Spotlight Card Component */
+.spotlight-card, .feat-card, .review-card, .case-card, .news-card, .art-card {
+  position: relative !important;
+  background: rgba(15, 23, 40, 0.72) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s, box-shadow 0.28s !important;
+}
+
+.spotlight-card::before, .feat-card::before, .review-card::before, .case-card::before, .news-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  padding: 1.2px;
+  background: radial-gradient(380px circle at var(--mouse-x, -999px) var(--mouse-y, -999px), rgba(95, 196, 173, 0.45), rgba(224, 176, 78, 0.2) 40%, transparent 65%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.spotlight-card::after, .feat-card::after, .review-card::after, .case-card::after, .news-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(380px circle at var(--mouse-x, -999px) var(--mouse-y, -999px), rgba(95, 196, 173, 0.07), transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.spotlight-card:hover::before, .spotlight-card:hover::after,
+.feat-card:hover::before, .feat-card:hover::after,
+.review-card:hover::before, .review-card:hover::after,
+.case-card:hover::before, .case-card:hover::after,
+.news-card:hover::before, .news-card:hover::after {
+  opacity: 1;
+}
+
+.spotlight-card:hover, .feat-card:hover, .review-card:hover, .case-card:hover, .news-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4), 0 0 24px -2px rgba(95, 196, 173, 0.18) !important;
+  border-color: rgba(95, 196, 173, 0.3) !important;
+}
+
+/* 5. ReactBits Magnetic Buttons */
+.magnetic-btn, .btn-primary, .nav-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s, filter 0.25s;
+}
+
+.btn-primary, .nav-btn {
+  background: linear-gradient(135deg, #0e6b5c 0%, #158270 50%, #5fc4ad 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 18px rgba(14, 107, 92, 0.35), 0 0 0 1px rgba(95, 196, 173, 0.3) inset !important;
+  border: none !important;
+}
+
+.btn-primary:hover, .nav-btn:hover {
+  box-shadow: 0 8px 28px rgba(14, 107, 92, 0.5), 0 0 16px rgba(95, 196, 173, 0.4) !important;
+  filter: brightness(1.08);
+}
+
+.btn-secondary {
+  background: rgba(23, 30, 41, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #e8ecf2 !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-secondary:hover {
+  border-color: #5fc4ad !important;
+  background: rgba(30, 41, 59, 0.9) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), 0 0 12px rgba(95, 196, 173, 0.15) !important;
+}
+
+/* 6. Luxury Glass Navigation Header */
+header {
+  background: rgba(7, 13, 24, 0.82) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28) !important;
+  transition: all 0.3s ease;
+}
+
+/* 7. Shimmering Response Time Promise Banner */
+.promise-banner {
+  background: linear-gradient(90deg, #08121f 0%, #0d2621 35%, #18332a 50%, #0d2621 65%, #08121f 100%) !important;
+  border-bottom: 1px solid rgba(95, 196, 173, 0.22) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.promise-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(224, 176, 78, 0.25), transparent);
+  animation: sweepGold 4.5s infinite ease-in-out;
+}
+
+@keyframes sweepGold {
+  0% { left: -50%; }
+  100% { left: 150%; }
+}
+
+.promise-badge {
+  background: linear-gradient(135deg, #e0b04e, #b8872b) !important;
+  color: #070d18 !important;
+  box-shadow: 0 0 12px rgba(224, 176, 78, 0.4);
+}
+
+/* 8. ReactBits Animated Interactive Situation Chips */
+.chips a {
+  background: rgba(18, 27, 45, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  color: #d1d9e6 !important;
+  backdrop-filter: blur(8px) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.chips a:hover {
+  background: rgba(23, 51, 45, 0.8) !important;
+  border-color: #5fc4ad !important;
+  color: #5fc4ad !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.3), 0 0 14px rgba(95, 196, 173, 0.25) !important;
+}
+
+/* 9. Luxury Gold & Teal Accents */
+.brand b {
+  background: linear-gradient(135deg, #ffffff 30%, #e0b04e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-tag {
+  background: rgba(23, 51, 45, 0.6) !important;
+  border: 1px solid rgba(95, 196, 173, 0.3) !important;
+  color: #5fc4ad !important;
+  box-shadow: 0 0 14px rgba(95, 196, 173, 0.12);
+}
+
+.reviews-section {
+  background: rgba(11, 20, 36, 0.6) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.helplines-bar {
+  background: rgba(38, 26, 14, 0.55) !important;
+  border: 1px solid rgba(224, 176, 78, 0.3) !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.helpline-pill {
+  background: rgba(15, 23, 40, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #f0b35a !important;
+}
+
+.helpline-pill:hover {
+  border-color: #e0b04e !important;
+  box-shadow: 0 0 14px rgba(224, 176, 78, 0.25);
+  color: #ffffff !important;
+}
+
+/* 10. Sticky Mobile CTA Luxury Style */
+.sticky-mobile-cta {
+  background: rgba(7, 13, 24, 0.92) !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: 1px solid rgba(95, 196, 173, 0.3) !important;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.4) !important;
+}

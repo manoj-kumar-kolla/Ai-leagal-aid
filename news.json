@@ -1,0 +1,47 @@
+[
+  {
+    "id": "news-1",
+    "title": "Supreme Court: Right to Default Bail is an Inalienable Fundamental Right under Article 21",
+    "source": "Supreme Court of India",
+    "date": "2026-10-30",
+    "category": "Criminal Law & BNSS",
+    "summary": "A 3-judge bench led by the CJI reaffirmed that if the investigating agency fails to file a charge sheet within the statutory 60 or 90-day period under Section 187 BNSS (CrPC 167), default bail becomes an indefeasible constitutional right.",
+    "url": "https://sci.gov.in"
+  },
+  {
+    "id": "news-2",
+    "title": "Delhi High Court: Landlords Cannot Arbitrarily Withhold Security Deposits Beyond 30 Days",
+    "source": "Delhi High Court",
+    "date": "2026-10-25",
+    "category": "Tenancy & Property",
+    "summary": "The High Court ruled that deductions from tenant security deposits must be substantiated with itemized contractor bills and formal receipts. Arbitrary deductions without prior written notice constitute an unfair trade practice.",
+    "url": "https://delhihighcourt.nic.in"
+  },
+  {
+    "id": "news-3",
+    "title": "National Consumer Commission Orders Air Carrier to Compensate Flight Cancellation Delays",
+    "source": "NCDRC New Delhi",
+    "date": "2026-10-21",
+    "category": "Consumer Protection",
+    "summary": "NCDRC held that airlines must provide automatic hotel accommodation and statutory compensation for delays exceeding 6 hours, regardless of operational challenges, under DGCA Civil Aviation Requirements.",
+    "url": "https://ncdrc.nic.in"
+  },
+  {
+    "id": "news-4",
+    "title": "Ministry of Home Affairs Expands 1930 Helpline: Instant Bank Freeze for UPI Frauds",
+    "source": "Ministry of Home Affairs (MHA)",
+    "date": "2026-10-15",
+    "category": "Cyber Law & IT Act",
+    "summary": "Citizens reporting cyber financial fraud within 2 hours of the transaction on helpline 1930 now benefit from automated API coordination across 42 commercial banks and UPI switches, boosting fund recovery rates to 78%.",
+    "url": "https://cybercrime.gov.in"
+  },
+  {
+    "id": "news-5",
+    "title": "Labour Ministry Issues Advisory on Timely Gratuity Disbursement upon Resignation",
+    "source": "Chief Labour Commissioner",
+    "date": "2026-10-08",
+    "category": "Labour & Employment",
+    "summary": "Clarified that gratuity cannot be withheld by employers due to alleged internal notice-period disputes unless a formal civil court decree or order under Section 4(6) of the Payment of Gratuity Act exists.",
+    "url": "https://clc.gov.in"
+  }
+]

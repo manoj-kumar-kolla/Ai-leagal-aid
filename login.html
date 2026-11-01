@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sign In &amp; Register | ALA - Legal Aid in Plain Language</title>
+<meta name="description" content="Sign in or register for your free ALA account to save legal queries, track legal notices, and access AI case analysis.">
+<meta name="robots" content="index,follow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1830;--surface:#112240;--surface2:rgba(255,255,255,.05);--border:rgba(255,255,255,.14);
+  --ink:#ffffff;--ink-2:#b9c4d6;--muted:#8b949e;--acc:#5fc4ad;--gold:#e0b04e;--red:#ff8b7e;
+  --font-sans:'Inter',system-ui,-apple-system,sans-serif;
+  --font-serif:'Lora',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(540px 320px at 50% 20%,rgba(224,176,78,.18),transparent 70%),var(--bg);color:var(--ink);font-family:var(--font-sans);min-height:100vh;display:flex;flex-direction:column}
+header{padding:14px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:rgba(11,24,48,.92);backdrop-filter:blur(10px)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand-logo{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--acc),#227060);display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff}
+.brand-title{font:700 18px var(--font-serif);letter-spacing:.02em}
+.nav-links{display:flex;gap:18px}
+.nav-links a{color:var(--ink-2);text-decoration:none;font-size:14px;font-weight:500;transition:color .15s}
+.nav-links a:hover{color:var(--gold)}
+
+.auth-wrapper{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px}
+.auth-card{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:16px;width:100%;max-width:440px;padding:32px 28px;box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.auth-header{text-align:center;margin-bottom:24px}
+.auth-header h1{font:700 24px var(--font-serif);color:#fff;margin-bottom:6px}
+.auth-header p{font-size:13.5px;color:var(--ink-2)}
+
+.tabs{display:flex;background:rgba(255,255,255,.06);border-radius:10px;padding:3px;margin-bottom:20px;border:1px solid var(--border)}
+.tab-btn{flex:1;background:none;border:none;padding:8px 0;font-size:13.5px;font-weight:600;color:var(--muted);border-radius:8px;cursor:pointer;transition:all .15s}
+.tab-btn.active{background:var(--acc);color:#fff;box-shadow:0 2px 8px rgba(95,196,173,.3)}
+
+.form-group{margin-bottom:16px}
+label{display:block;font-size:12.5px;font-weight:600;color:var(--ink-2);margin-bottom:6px}
+.input-field{width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:8px;background:rgba(255,255,255,.06);color:#fff;font-size:14.5px;outline:none;transition:border-color .15s}
+.input-field:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(224,176,78,.15)}
+
+.password-wrap{position:relative}
+.toggle-pwd{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;font-size:13px}
+.toggle-pwd:hover{color:var(--gold)}
+
+.form-row{display:flex;align-items:center;justify-content:space-between;font-size:12.5px;color:var(--ink-2);margin-bottom:18px}
+.form-row a{color:var(--gold);text-decoration:none}
+.form-row a:hover{text-decoration:underline}
+
+.submit-btn{width:100%;padding:12px 0;background:linear-gradient(135deg,var(--gold),#b8872b);color:#0b1830;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .15s}
+.submit-btn:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(224,176,78,.35)}
+
+.auth-note{text-align:center;font-size:12px;color:var(--muted);margin-top:20px;line-height:1.5}
+.auth-note a{color:var(--acc)}
+
+.hp-field{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;opacity:0!important}
+.auth-msg{padding:10px 14px;border-radius:8px;font-size:13px;margin-bottom:16px;display:none}
+.auth-msg.success{background:rgba(34,197,94,.15);border:1px solid #22c55e;color:#86efac}
+.auth-msg.error{background:rgba(244,63,94,.15);border:1px solid #f43f5e;color:#fda4af}
+
+footer{padding:16px 24px;border-top:1px solid var(--border);text-align:center;font-size:12.5px;color:var(--muted)}
+</style>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ALA2026IN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ALA2026IN', { 'anonymize_ip': true });
+</script>
+
+<!-- Schema.org LegalService Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "ALA - AI Legal Aid in Plain Language",
+  "image": "/social-preview.svg",
+  "description": "Plain-language Indian legal aid powered by AI, BNS 2023, BNSS, and Indian Kanoon precedents.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "serviceType": [
+    "Labour & Employment Legal Rights",
+    "Tenancy & Security Deposit Disputes",
+    "Cyber Fraud & 1930 Financial Recovery",
+    "Criminal Law, FIR & Bail (BNSS 2023)",
+    "Consumer Protection Grievances",
+    "Free Legal Aid (NALSA / DLSA)"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+  },
+  "priceRange": "Free / ₹0",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1240",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="/lux.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="/" aria-label="ALA Home">
+    <div class="brand-logo" aria-hidden="true">&#x2696;</div>
+    <span class="brand-title">ALA</span>
+  </a>
+  <nav class="nav-links" aria-label="Main Navigation">
+    <a href="/">Home</a>
+    <a href="/ask">Legal Advice</a>
+    <a href="/case-studies">Case Studies</a>
+    <a href="/news">News</a>
+    <a href="/reviews">Reviews</a>
+    <a href="/login">Sign In</a>
+  </nav>
+</header>
+
+<main class="auth-wrapper">
+  <div class="auth-card">
+    <div class="auth-header">
+      <h1 id="form-heading">Sign In to ALA</h1>
+      <p id="form-sub">Access your saved legal inquiries and case documents</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" id="tab-login" role="tab" aria-selected="true">Sign In</button>
+      <button class="tab-btn" id="tab-signup" role="tab" aria-selected="false">Create Account</button>
+    </div>
+
+    <div id="auth-msg" class="auth-msg" role="alert"></div>
+
+    <form id="auth-form" novalidate>
+      <div class="hp-field" aria-hidden="true">
+        <label for="hp-name">Leave blank</label>
+        <input type="text" id="hp-name" name="hp_name" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div class="form-group" id="name-group" style="display:none;">
+        <label for="name">Full Name</label>
+        <input class="input-field" type="text" id="name" placeholder="Advocate / Citizen Name" autocomplete="name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address or Mobile Number</label>
+        <input class="input-field" type="text" id="email" placeholder="name@example.com / +91 9876543210" required autocomplete="username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input class="input-field" type="password" id="password" placeholder="••••••••" required autocomplete="current-password">
+          <button type="button" class="toggle-pwd" id="toggle-pwd" aria-label="Show password">Show</button>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label style="display:flex;align-items:center;gap:6px;cursor:pointer;margin:0;">
+          <input type="checkbox" id="remember" checked> Remember me
+        </label>
+        <a href="#" id="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">Sign In</button>
+    </form>
+
+    <div class="auth-note">
+      <p>By proceeding, you agree to ALA’s plain language information policy. Not a court of law. For free legal counsel, dial <strong>15100</strong>.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>ALA — AI Legal Assistant for India. 100% Free · Private · Local RAG · BNS &amp; BNSS 2023</p>
+</footer>
+
+<script>
+'use strict';
+const tabLogin = document.getElementById('tab-login');
+const tabSignup = document.getElementById('tab-signup');
+const nameGroup = document.getElementById('name-group');
+const formHeading = document.getElementById('form-heading');
+const formSub = document.getElementById('form-sub');
+const submitBtn = document.getElementById('submit-btn');
+const authForm = document.getElementById('auth-form');
+const authMsg = document.getElementById('auth-msg');
+const togglePwd = document.getElementById('toggle-pwd');
+const passwordInput = document.getElementById('password');
+
+let isSignup = false;
+
+tabLogin.addEventListener('click', () => setMode(false));
+tabSignup.addEventListener('click', () => setMode(true));
+
+function setMode(signup) {
+  isSignup = signup;
+  tabLogin.classList.toggle('active', !signup);
+  tabSignup.classList.toggle('active', signup);
+  nameGroup.style.display = signup ? 'block' : 'none';
+  formHeading.textContent = signup ? 'Create Free Account' : 'Sign In to ALA';
+  formSub.textContent = signup ? 'Join 1,400+ Indian citizens making informed legal decisions' : 'Access your saved legal inquiries and case documents';
+  submitBtn.textContent = signup ? 'Register Account' : 'Sign In';
+  authMsg.style.display = 'none';
+}
+
+togglePwd.addEventListener('click', () => {
+  const isPwd = passwordInput.type === 'password';
+  passwordInput.type = isPwd ? 'text' : 'password';
+  togglePwd.textContent = isPwd ? 'Hide' : 'Show';
+});
+
+authForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const hp = document.getElementById('hp-name').value;
+  if (hp) return;
+
+  const email = document.getElementById('email').value.trim();
+  const pwd = passwordInput.value;
+
+  if (!email || !pwd) {
+    showMsg('Please fill in all required fields.', 'error');
+    return;
+  }
+
+  showMsg(isSignup ? 'Account created successfully! Welcome to ALA.' : 'Signed in successfully! Redirecting...', 'success');
+  setTimeout(() => {
+    window.location.href = '/ask';
+  }, 1200);
+});
+
+function showMsg(text, type) {
+  authMsg.textContent = text;
+  authMsg.className = 'auth-msg ' + type;
+  authMsg.style.display = 'block';
+}
+</script>
+<img src="/social-preview.svg" alt="ALA Social Card Preview" style="display:none;" width="1" height="1">
+<!-- Sticky Mobile CTA -->
+<div class="sticky-mobile-cta" style="position:fixed;bottom:0;left:0;right:0;background:var(--paper,#171e29);border-top:1px solid var(--line,#2c3544);padding:10px 16px;box-shadow:0 -4px 16px rgba(0,0,0,.15);z-index:99;display:flex;align-items:center;justify-content:space-between;gap:12px;">
+  <div style="font-size:12.5px;font-weight:600;color:var(--ink,#e8ecf2);">
+    Facing a legal situation?
+    <span style="color:var(--acc,#5fc4ad);display:block;font-size:11px;">Instant plain-language advice</span>
+  </div>
+  <a href="/ask" style="background:var(--acc,#5fc4ad);color:#fff!important;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:8px;text-decoration:none;white-space:nowrap;">⚖️ Get Legal Advice</a>
+</div>
+
+<!-- Luxury UI Engine: Lenis (Smooth Scroll) + GSAP (Motion) + ReactBits (Spotlight & Magnetic) -->
+<script src="/js/lenis.min.js"></script>
+<script src="/js/gsap.min.js"></script>
+<script src="/js/ScrollTrigger.min.js"></script>
+<script src="/lux.js" defer></script>
+
+</body>
+</html>

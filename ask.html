@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Legal Advice Assistant | ALA - Legal Aid in Plain Language</title>
+<meta name="description" content="Ask Indian legal questions, upload legal notices, contracts, FIR copies, or media evidence. Instant AI legal analysis grounded in Indian statutory law under 2s.">
+<meta name="robots" content="index,follow">
+
+<!-- OpenGraph / Twitter Cards -->
+<meta property="og:title" content="AI Legal Advice Assistant | ALA India">
+<meta property="og:description" content="100% Free, confidential legal advice grounded in BNS, BNSS, and Indian statutory acts.">
+<meta property="og:image" content="/social-preview.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/social-preview.svg">
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ALA2026IN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ALA2026IN', { 'anonymize_ip': true });
+</script>
+
+<!-- Schema.org LegalService Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "ALA - AI Legal Aid in Plain Language",
+  "image": "/social-preview.svg",
+  "description": "Plain-language Indian legal aid powered by AI, BNS 2023, BNSS, and Indian Kanoon precedents.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "serviceType": [
+    "Labour & Employment Legal Rights",
+    "Tenancy & Security Deposit Disputes",
+    "Cyber Fraud & 1930 Financial Recovery",
+    "Criminal Law, FIR & Bail (BNSS 2023)",
+    "Consumer Protection Grievances",
+    "Free Legal Aid (NALSA / DLSA)"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+  },
+  "priceRange": "Free / ₹0",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1240",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/lux.css">
+
+<style>
+:root {
+  box-sizing: border-box;
+  --bg: #070d18;
+  --paper: rgba(15, 23, 40, 0.85);
+  --paper-solid: #0d1726;
+  --ink: #e8ecf2;
+  --mute: #9aa5b6;
+  --line: rgba(255, 255, 255, 0.08);
+  --acc: #5fc4ad;
+  --accbg: rgba(23, 51, 45, 0.7);
+  --gold: #e0b04e;
+  --goldbg: rgba(45, 34, 14, 0.7);
+  --warn: #f0b35a;
+  --warnbg: rgba(58, 44, 20, 0.75);
+  --red: #ff8b7e;
+  --redbg: rgba(58, 28, 26, 0.75);
+  --glow: rgba(95, 196, 173, 0.16);
+  --serif: "Lora", Georgia, serif;
+  --sans: "Inter", -apple-system, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.6 var(--sans);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* TOP NOTIFICATION PROMISE BANNER */
+.promise-banner {
+  background: linear-gradient(90deg, #091322, #0d2822 50%, #091322);
+  border-bottom: 1px solid rgba(95, 196, 173, 0.25);
+  color: #fff;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.promise-badge {
+  background: linear-gradient(135deg, #e0b04e, #b8872b);
+  color: #070d18;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(7, 13, 24, 0.88);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.brand b {
+  font: 700 22px var(--serif);
+  color: var(--gold);
+  letter-spacing: .02em;
+}
+.brand span {
+  color: var(--mute);
+  font-size: 13px;
+  border-left: 1px solid var(--line);
+  padding-left: 10px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+.nav-links a {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 6px 4px;
+  transition: color .15s;
+}
+.nav-links a.active, .nav-links a:hover {
+  color: var(--acc);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 16px;
+}
+.btn-helpline {
+  background: rgba(224, 176, 78, 0.15);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .15s;
+}
+.btn-helpline:hover {
+  background: var(--gold);
+  color: #070d18;
+}
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--mute);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f0b35a;
+}
+.dot.ok { background: #2e9e5b; }
+
+/* MAIN WORKSPACE WRAPPER */
+.workspace {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 28px 20px 80px;
+}
+
+/* TOP HERO & COMPOSER CONTAINER */
+.hero-box {
+  background: rgba(15, 23, 40, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px 36px;
+  margin-bottom: 28px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+.hero-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--acc));
+}
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accbg);
+  color: var(--acc);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border: 1px solid rgba(95, 196, 173, 0.3);
+}
+.hero-box h1 {
+  font: 700 clamp(26px, 4vw, 38px)/1.2 var(--serif);
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.hero-box p {
+  color: var(--mute);
+  font-size: 15px;
+  margin-bottom: 24px;
+  max-width: 72ch;
+  line-height: 1.55;
+}
+
+/* COMPOSER FORM */
+.composer-card {
+  background: rgba(7, 13, 24, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(95, 196, 173, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.file-chip {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: rgba(23, 51, 45, 0.85);
+  border: 1px solid var(--acc);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 13px;
+  color: var(--acc);
+  width: fit-content;
+}
+.file-chip.active { display: inline-flex; }
+.file-chip-del { cursor: pointer; color: var(--mute); font-weight: 700; margin-left: 6px; }
+.file-chip-del:hover { color: var(--red); }
+
+.composer-input-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.composer-textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font: 16px/1.55 var(--sans);
+  resize: none;
+  min-height: 64px;
+  max-height: 180px;
+}
+.composer-textarea::placeholder {
+  color: #6c788c;
+}
+
+.composer-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 12px;
+}
+.attach-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--ink);
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .15s;
+}
+.attach-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--acc);
+  color: var(--acc);
+}
+.hidden-file-input { display: none; }
+
+.submit-btn {
+  background: linear-gradient(135deg, #e0b04e 0%, #b8872b 100%);
+  color: #070d18;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px rgba(224, 176, 78, 0.35);
+  transition: all .15s;
+}
+.submit-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(224, 176, 78, 0.45);
+}
+.submit-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* QUICK SITUATION CHIPS */
+.chips-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--mute);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.chips-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  color: #c0cbdb;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all .18s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.chip-btn:hover {
+  background: rgba(95, 196, 173, 0.12);
+  border-color: var(--acc);
+  color: var(--acc);
+  transform: translateY(-2px);
+}
+
+/* RESULTS & ANALYSIS GRID */
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .results-grid { grid-template-columns: 1fr; }
+  .header-actions { display: none; }
+}
+
+/* ANALYSIS FEED */
+#feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.query-card {
+  background: rgba(23, 30, 41, 0.7);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 15px;
+  color: #e8ecf2;
+}
+.query-card .file-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--accbg);
+  color: var(--acc);
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* STREAMING ANSWER CARD */
+.ans-card {
+  background: rgba(15, 23, 40, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.ans-card .wait-msg {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gold);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 20px 0;
+}
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--gold);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* STRUCTURED LEGAL REPORT TYPOGRAPHY */
+.ans-card h3 {
+  font: 700 18px var(--serif);
+  color: var(--gold);
+  margin: 22px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(224, 176, 78, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ans-card h3:first-of-type { margin-top: 0; }
+.ans-card p {
+  color: #dbe3ee;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.ans-card ul, .ans-card ol {
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+.ans-card li {
+  margin-bottom: 8px;
+  color: #dbe3ee;
+  line-height: 1.6;
+}
+.ans-card strong {
+  color: #fff;
+}
+
+/* ALERTS & NOTES */
+.alert-note {
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.alert-note.urgent {
+  background: var(--redbg);
+  border: 1px solid var(--red);
+  color: #ffc9c4;
+}
+.alert-note.info {
+  background: var(--accbg);
+  border: 1px solid var(--acc);
+  color: #a7ebd9;
+}
+.alert-note.warning {
+  background: var(--warnbg);
+  border: 1px solid var(--warn);
+  color: #fae0a2;
+}
+
+/* ACTIONS BAR */
+.ans-actions-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.action-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .15s;
+}
+.action-btn:hover {
+  background: rgba(95, 196, 173, 0.15);
+  border-color: var(--acc);
+  color: var(--acc);
+}
+
+/* ASIDE STATUTORY BASIS DRAWER */
+.basis-card {
+  background: rgba(15, 23, 40, 0.75);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(14px);
+}
+.basis-card h2 {
+  font: 700 17px var(--serif);
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.statute-item {
+  background: rgba(7, 13, 24, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+.statute-title {
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--acc);
+  margin-bottom: 4px;
+}
+.statute-src {
+  font-size: 11.5px;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.statute-desc {
+  font-size: 12.5px;
+  color: var(--mute);
+  line-height: 1.45;
+}
+
+/* MODAL */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.open { display: flex; }
+.modal-content {
+  background: var(--paper-solid);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  max-width: 540px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  padding: 24px;
+}
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+.modal-head h3 { font: 700 18px var(--serif); color: var(--gold); }
+.modal-close-btn { background: none; border: none; color: var(--mute); font-size: 24px; cursor: pointer; }
+.modal-close-btn:hover { color: #fff; }
+.helpline-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.helpline-row:last-child { border: none; }
+.helpline-name { font-weight: 600; font-size: 14px; color: #fff; }
+.helpline-desc { font-size: 12px; color: var(--mute); margin-top: 2px; }
+.helpline-call {
+  background: var(--accbg);
+  border: 1px solid var(--acc);
+  color: var(--acc);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 13px;
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<!-- 4. Response Time Promise Banner -->
+<div class="promise-banner">
+  <span>⚡ <b>Instant AI Legal Analysis Under 2s</b> — Plain language rights, citations & document reviews</span>
+  <span class="promise-badge">BNS 2023 READY</span>
+</div>
+
+<!-- Navigation Header -->
+<header>
+  <a href="/" class="brand" title="ALA Home">
+    <b>ALA</b>
+    <span>Legal Aid in Plain Language</span>
+  </a>
+  <nav class="nav-links" aria-label="Main Navigation">
+    <a href="/" title="Home">Home</a>
+    <a href="/ask" class="active" title="Legal Advice Workspace">Legal Advice</a>
+    <a href="/case-studies" title="Real Case Studies">Case Studies</a>
+    <a href="/news" title="Legal News Updates">Law News</a>
+    <a href="/reviews" title="Customer Reviews">Reviews</a>
+    <a href="/login" title="Citizen Login">Sign In</a>
+  </nav>
+  <div class="header-actions">
+    <button type="button" class="btn-helpline" id="open-helplines-modal" title="Free Government Legal Helplines">
+      <span>📞</span> 15100 NALSA Aid
+    </button>
+    <div class="status-pill" id="server-status">
+      <span class="dot ok"></span>
+      <span id="status-text">ALA Core Active</span>
+    </div>
+  </div>
+</header>
+
+<!-- Main Workspace -->
+<main class="workspace">
+
+  <!-- Prominent Top Hero & Composer Card -->
+  <section class="hero-box">
+    <div class="tag-badge">
+      <span>⚖️</span>
+      <span>Updated for Bharatiya Nyaya Sanhita (BNS 2023), BNSS & BSA</span>
+    </div>
+    <h1>Indian Legal Advice in <span class="shiny-text">Plain Language</span></h1>
+    <p>
+      Type your situation in plain words or upload documents (contracts, legal notices, FIR copies, cheque memos). ALA extracts relevant statutory provisions, your constitutional rights, and step-by-step remedies in 12 regional languages.
+    </p>
+
+    <!-- The Elevated Composer Workspace -->
+    <form class="composer-card" id="ask-form" onsubmit="event.preventDefault(); submitLegalQuery();">
+      <!-- File Attachment Chip -->
+      <div class="file-chip" id="attached-file-chip">
+        <span>📎</span>
+        <span id="attached-file-name">notice.pdf</span>
+        <span class="file-chip-del" id="remove-file-btn" title="Remove attachment">&times;</span>
+      </div>
+
+      <!-- Main Input Textarea -->
+      <div class="composer-input-row">
+        <textarea
+          id="box"
+          class="composer-textarea"
+          rows="2"
+          placeholder="Describe what happened in plain words (e.g. 'My landlord refuses to return my security deposit', 'Company laid me off without gratuity', 'Received police summons under BNSS')..."
+          aria-label="Describe your legal situation"
+          autofocus
+        ></textarea>
+      </div>
+
+      <!-- Composer Actions Row -->
+      <div class="composer-actions-row">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <input type="file" id="file-uploader" class="hidden-file-input" accept=".pdf,.docx,.doc,.txt,.jpg,.jpeg,.png,.webp,.mp3,.wav,.mp4">
+          <button type="button" class="attach-btn" id="attach-file-btn" title="Attach contract, notice or scan">
+            <span>📎</span> Attach Notice / Scan
+          </button>
+          <span style="font-size:12px;color:var(--mute);">PDF, DOCX, Images, Audio, Video</span>
+        </div>
+
+        <button type="submit" class="submit-btn" id="send">
+          <span>⚖️ Analyse Situation</span>
+          <span>→</span>
+        </button>
+      </div>
+    </form>
+
+    <!-- Quick Situation Chips -->
+    <div class="chips-label">Or choose a common Indian citizen situation:</div>
+    <div class="chips-bar" id="suggestion-chips">
+      <button type="button" class="chip-btn" data-query="My landlord refuses to refund my security deposit after lease termination in Bengaluru">🏠 Landlord Deposit Refund</button>
+      <button type="button" class="chip-btn" data-query="My employer has withheld salary for 3 months and is refusing to pay gratuity">💼 Unpaid Salary &amp; Gratuity</button>
+      <button type="button" class="chip-btn" data-query="What are my immediate constitutional rights if police arrest or detain my brother under BNSS 2023?">🚨 Rights on Police Arrest (BNSS)</button>
+      <button type="button" class="chip-btn" data-query="Lost money in a UPI banking phishing fraud. How to recover funds through 1930 within the golden hour?">💳 UPI Cyber Fraud Recovery</button>
+      <button type="button" class="chip-btn" data-query="A cheque I received has bounced. What is the process to issue Section 138 notice under Negotiable Instruments Act?">📜 Cheque Bounce Notice (s.138)</button>
+      <button type="button" class="chip-btn" data-query="Purchased a defective refrigerator under warranty and company denies replacement. How to file on e-Daakhil?">🛍️ Defective Product Warranty</button>
+      <button type="button" class="chip-btn" data-query="Who is eligible for free legal aid under Section 12 of the Legal Services Authorities Act and how to apply at DLSA?">🏛️ Free Legal Aid (NALSA)</button>
+    </div>
+  </section>
+
+  <!-- Real-time Analysis Feed and Statutory Basis -->
+  <div class="results-grid">
+    <!-- Stream Feed -->
+    <section id="feed" aria-live="polite">
+      <div class="ans-card" id="initial-placeholder">
+        <h3 style="margin-top:0;">⚖️ Welcome to ALA Legal Counsel</h3>
+        <p>
+          Enter your situation in the box above or choose one of the situation shortcuts. ALA will search 88+ Indian statutory sections, cross-reference High Court precedents, and generate a clear, step-by-step action plan for you.
+        </p>
+        <div class="alert-note info">
+          <span>ℹ️</span>
+          <div>
+            <b>100% Confidential & Free:</b> No personal data is stored or monetized. If you need a pro bono advocate, call the National Legal Services Authority helpline at <b>15100</b>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aside Statutory Basis Card -->
+    <aside id="side">
+      <div class="basis-card" id="statute-basis-card">
+        <h2><span>📖</span> Matched Statutory Basis</h2>
+        <p style="font-size:12.5px;color:var(--mute);margin-bottom:14px;">
+          Statutes and sections indexed under Bharatiya Nyaya Sanhita 2023, BNSS, and Indian special acts.
+        </p>
+        <div id="statute-list">
+          <div class="statute-item">
+            <div class="statute-title">Transfer of Property Act 1882</div>
+            <div class="statute-src">Section 106, 108 — Leases &amp; Eviction</div>
+            <div class="statute-desc">Governs tenancy notice periods and forbids forceful dispossession without court decree.</div>
+          </div>
+          <div class="statute-item">
+            <div class="statute-title">Payment of Gratuity Act 1972</div>
+            <div class="statute-src">Section 4 — Statutory Gratuity Rights</div>
+            <div class="statute-desc">Mandates gratuity payment upon 5 years of service, payable within 30 days of exit.</div>
+          </div>
+          <div class="statute-item">
+            <div class="statute-title">BNSS 2023 (New Criminal Procedure)</div>
+            <div class="statute-src">Section 47, 58 — Arrest Rights &amp; Production</div>
+            <div class="statute-desc">Grounds of arrest must be informed in writing; magistrate production mandatory within 24 hours.</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<!-- Helplines Modal -->
+<div class="modal-overlay" id="helplines-modal" role="dialog" aria-modal="true" aria-labelledby="helpline-modal-title">
+  <div class="modal-content">
+    <div class="modal-head">
+      <h3 id="helpline-modal-title">📞 Official Government Legal Helplines</h3>
+      <button type="button" class="modal-close-btn" id="close-helpline-modal" aria-label="Close dialog">&times;</button>
+    </div>
+    <div id="helpline-items">
+      <div class="helpline-row">
+        <div>
+          <div class="helpline-name">NALSA Free Legal Aid Helpline</div>
+          <div class="helpline-desc">Free pro bono advocates for women, children, custody, low income.</div>
+        </div>
+        <a href="tel:15100" class="helpline-call">📞 15100</a>
+      </div>
+      <div class="helpline-row">
+        <div>
+          <div class="helpline-name">National Cyber Crime Helpline</div>
+          <div class="helpline-desc">Immediate freeze for UPI, netbanking, and online frauds.</div>
+        </div>
+        <a href="tel:1930" class="helpline-call">📞 1930</a>
+      </div>
+      <div class="helpline-row">
+        <div>
+          <div class="helpline-name">National Emergency Services</div>
+          <div class="helpline-desc">Police, Fire, Ambulance 24/7 nationwide.</div>
+        </div>
+        <a href="tel:112" class="helpline-call">📞 112</a>
+      </div>
+      <div class="helpline-row">
+        <div>
+          <div class="helpline-name">Women Helpline (National)</div>
+          <div class="helpline-desc">Domestic distress, harassment, and emergency protection.</div>
+        </div>
+        <a href="tel:181" class="helpline-call">📞 181</a>
+      </div>
+      <div class="helpline-row">
+        <div>
+          <div class="helpline-name">National Consumer Helpline</div>
+          <div class="helpline-desc">Defective products, warranty breach, unfair trade practices.</div>
+        </div>
+        <a href="tel:1915" class="helpline-call">📞 1915</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ==============================================================================
+// ALA CLIENT INTERACTION & STREAMING ENGINE (Zero External Dependencies)
+// ==============================================================================
+let currentAttachedFile = null;
+let isGenerating = false;
+let conversationHistory = [];
+
+const queryInput = document.getElementById('box');
+const submitBtn = document.getElementById('send');
+const feedContainer = document.getElementById('feed');
+const fileInput = document.getElementById('file-uploader');
+const attachBtn = document.getElementById('attach-file-btn');
+const fileChip = document.getElementById('attached-file-chip');
+const fileNameSpan = document.getElementById('attached-file-name');
+const removeFileBtn = document.getElementById('remove-file-btn');
+const helplinesModal = document.getElementById('helplines-modal');
+const openModalBtn = document.getElementById('open-helplines-modal');
+const closeModalBtn = document.getElementById('close-helpline-modal');
+
+// Modal Toggles
+if (openModalBtn && helplinesModal) {
+  openModalBtn.addEventListener('click', () => helplinesModal.classList.add('open'));
+}
+if (closeModalBtn && helplinesModal) {
+  closeModalBtn.addEventListener('click', () => helplinesModal.classList.remove('open'));
+}
+if (helplinesModal) {
+  helplinesModal.addEventListener('click', (e) => {
+    if (e.target === helplinesModal) helplinesModal.classList.remove('open');
+  });
+}
+
+// File Attachment Handler
+if (attachBtn && fileInput) {
+  attachBtn.addEventListener('click', () => fileInput.click());
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      currentAttachedFile = {
+        name: file.name,
+        type: file.type || 'application/octet-stream',
+        size: file.size,
+        data: e.target.result
+      };
+      if (fileNameSpan) fileNameSpan.textContent = `${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+      if (fileChip) fileChip.classList.add('active');
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+if (removeFileBtn) {
+  removeFileBtn.addEventListener('click', () => {
+    currentAttachedFile = null;
+    if (fileInput) fileInput.value = '';
+    if (fileChip) fileChip.classList.remove('active');
+  });
+}
+
+// Clickable Situation Chips
+document.querySelectorAll('.chip-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const query = btn.dataset.query;
+    if (query) {
+      if (queryInput) queryInput.value = query;
+      submitLegalQuery();
+    }
+  });
+});
+
+// Markdown Formatter
+function formatMarkdown(src) {
+  if (!src) return '';
+  const lines = src.split('\n');
+  let html = '';
+  let inList = false;
+
+  for (let rawLine of lines) {
+    const line = rawLine.trim();
+
+    // List item
+    if (line.match(/^[-*•]\s+(.*)/)) {
+      if (!inList) { html += '<ul>'; inList = true; }
+      const text = line.replace(/^[-*•]\s+/, '');
+      html += `<li>${inlineFormat(text)}</li>`;
+      continue;
+    }
+
+    if (inList && !line) {
+      html += '</ul>';
+      inList = false;
+      continue;
+    }
+
+    if (!line) continue;
+
+    // Header checks
+    if (line.startsWith('### ') || line.startsWith('**') && line.endsWith('**') && line.length < 80) {
+      if (inList) { html += '</ul>'; inList = false; }
+      const headerText = line.replace(/^###\s*/, '').replace(/^\*\*/, '').replace(/\*\*$/, '');
+      html += `<h3>⚖️ ${inlineFormat(headerText)}</h3>`;
+      continue;
+    }
+
+    if (inList) { html += '</ul>'; inList = false; }
+    html += `<p>${inlineFormat(line)}</p>`;
+  }
+
+  if (inList) html += '</ul>';
+  return html;
+}
+
+function inlineFormat(text) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    .replace(/`([^`]+)`/g, '<code style="background:rgba(255,255,255,0.08);padding:2px 6px;border-radius:4px;">$1</code>');
+}
+
+// MAIN SUBMISSION & STREAMING HANDLER
+async function submitLegalQuery() {
+  const query = (queryInput ? queryInput.value : '').trim();
+  const fileToSend = currentAttachedFile;
+
+  if ((!query && !fileToSend) || isGenerating) return;
+
+  isGenerating = true;
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>⏳ Synthesizing...</span>';
+  }
+
+  // Clear input
+  if (queryInput) queryInput.value = '';
+  currentAttachedFile = null;
+  if (fileInput) fileInput.value = '';
+  if (fileChip) fileChip.classList.remove('active');
+
+  // Remove initial placeholder
+  const initCard = document.getElementById('initial-placeholder');
+  if (initCard) initCard.remove();
+
+  // Create User Query Card
+  const queryCard = document.createElement('div');
+  queryCard.className = 'query-card';
+  let queryHtml = '';
+  if (fileToSend) {
+    queryHtml += `<div class="file-tag">📎 Attached Document: ${fileToSend.name}</div>`;
+  }
+  queryHtml += `<div>${query ? inlineFormat(query) : 'Please analyze the attached legal document and extract my statutory rights.'}</div>`;
+  queryCard.innerHTML = queryHtml;
+  feedContainer.appendChild(queryCard);
+
+  // Create Answer Container
+  const ansCard = document.createElement('article');
+  ansCard.className = 'ans-card';
+  ansCard.innerHTML = `
+    <div class="wait-msg" id="stream-waiter">
+      <div class="spinner"></div>
+      <span>Searching 88+ indexed Indian statutory provisions &amp; synthesizing legal advice...</span>
+    </div>
+    <div class="stream-content" id="stream-body"></div>
+  `;
+  feedContainer.appendChild(ansCard);
+
+  // Smooth scroll into view
+  queryCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  const streamBody = ansCard.querySelector('#stream-body');
+  const waiter = ansCard.querySelector('#stream-waiter');
+  let fullText = '';
+
+  try {
+    const response = await fetch('/api/ask', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        question: query,
+        file: fileToSend || null,
+        history: conversationHistory
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`Server returned HTTP ${response.status}`);
+    }
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder('utf-8');
+    let buffer = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      let boundary;
+
+      while ((boundary = buffer.indexOf('\n')) !== -1) {
+        const line = buffer.slice(0, boundary).trim();
+        buffer = buffer.slice(boundary + 1);
+
+        if (!line) continue;
+
+        try {
+          const event = JSON.parse(line);
+
+          if (event.type === 'meta') {
+            if (waiter) waiter.remove();
+
+            // Insert alert notes if urgent or language detected
+            if (event.urgent) {
+              ansCard.insertAdjacentHTML('afterbegin', `
+                <div class="alert-note urgent">
+                  <span>🚨</span>
+                  <div><b>Urgent: Police Custody / Arrest Safeguards Apply.</b> Immediate notification of arrest grounds under BNSS Section 47 is mandatory. Production before a Judicial Magistrate within 24 hours cannot be delayed. Call <b>15100</b> for immediate pro bono counsel.</div>
+                </div>
+              `);
+            }
+
+            if (event.language && event.language.name && event.language.name !== 'English') {
+              ansCard.insertAdjacentHTML('afterbegin', `
+                <div class="alert-note info">
+                  <span>🌐</span>
+                  <div>Detected language: <b>${event.language.name}</b>. ALA will structure advice tailored to Indian citizens.</div>
+                </div>
+              `);
+            }
+
+            // Update Side Basis Card
+            if (event.matched && event.matched.length > 0) {
+              const listEl = document.getElementById('statute-list');
+              if (listEl) {
+                listEl.innerHTML = event.matched.map(m => `
+                  <div class="statute-item">
+                    <div class="statute-title">${m.title}</div>
+                    <div class="statute-src">${m.source}</div>
+                    <div class="statute-desc">${m.body}</div>
+                  </div>
+                `).join('');
+              }
+            }
+          } else if (event.type === 'token') {
+            if (waiter) waiter.remove();
+            fullText += event.t;
+            if (streamBody) streamBody.innerHTML = formatMarkdown(fullText);
+          } else if (event.type === 'error') {
+            if (waiter) waiter.remove();
+            ansCard.insertAdjacentHTML('beforeend', `
+              <div class="alert-note warning">
+                <span>⚠️</span>
+                <div>${event.message || 'Notice from statutory inference engine.'}</div>
+              </div>
+            `);
+          } else if (event.type === 'done') {
+            // Append Action Buttons
+            const actionsBar = document.createElement('div');
+            actionsBar.className = 'ans-actions-bar';
+            actionsBar.innerHTML = `
+              <button type="button" class="action-btn" id="copy-btn">📋 Copy Advice</button>
+              <button type="button" class="action-btn" id="print-btn">🖨️ Print / Save PDF</button>
+              <a href="tel:15100" class="action-btn" style="color:var(--gold);border-color:var(--gold);">📞 Call 15100 NALSA</a>
+            `;
+
+            const copyBtn = actionsBar.querySelector('#copy-btn');
+            copyBtn.onclick = () => {
+              navigator.clipboard.writeText(fullText);
+              copyBtn.textContent = '✓ Copied to Clipboard';
+              setTimeout(() => copyBtn.textContent = '📋 Copy Advice', 2000);
+            };
+
+            const printBtn = actionsBar.querySelector('#print-btn');
+            printBtn.onclick = () => window.print();
+
+            ansCard.appendChild(actionsBar);
+
+            // Record to conversation history
+            conversationHistory.push(
+              { role: 'user', content: query || `[Attached: ${fileToSend.name}]` },
+              { role: 'assistant', content: fullText }
+            );
+            conversationHistory = conversationHistory.slice(-6);
+          }
+        } catch (parseErr) {
+          // Skip incomplete JSON line chunks
+        }
+      }
+    }
+  } catch (err) {
+    if (waiter) waiter.remove();
+    ansCard.innerHTML = `
+      <div class="alert-note warning">
+        <span>⚠️</span>
+        <div>Could not connect to ALA Core on localhost:8000. Please ensure the local Python server is active.</div>
+      </div>
+    `;
+  }
+
+  isGenerating = false;
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = '<span>⚖️ Analyse Situation</span><span>→</span>';
+  }
+}
+
+// Enter Key triggers submission
+if (queryInput) {
+  queryInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      submitLegalQuery();
+    }
+  });
+}
+
+// Auto-run Query from URL parameter if present (e.g. /ask?q=...)
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const qParam = urlParams.get('q');
+  if (qParam && qParam.trim()) {
+    if (queryInput) queryInput.value = qParam.trim();
+    setTimeout(() => submitLegalQuery(), 350);
+  }
+});
+</script>
+
+<!-- Luxury UI Engine: Lenis (Smooth Scroll) + GSAP (Motion) + ReactBits (Spotlight & Magnetic) -->
+<script src="/js/lenis.min.js"></script>
+<script src="/js/gsap.min.js"></script>
+<script src="/js/ScrollTrigger.min.js"></script>
+<script src="/lux.js" defer></script>
+
+</body>
+</html>
